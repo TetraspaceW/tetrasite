@@ -1,3 +1,32 @@
+type Work = {
+  name: string;
+  wordcount: number;
+  complete: boolean;
+  description: string;
+  link: string;
+};
+
+const fiction = [
+  {
+    name: "Minutes of the British Council",
+    wordcount: 949,
+    description:
+      "Crusader Kings 2 fanfiction. The Shahanshah has a discussion with his closest confidants after the conquest of the world.",
+    link: "https://archiveofourown.org/works/40894746",
+  },
+  {
+    name: "You Thought This Was Going To Be A Fanfiction But Actually It's Perceptor Explaining Stability Theory to Shockwave",
+    link: "https://archiveofourown.org/works/40589124",
+    wordcount: 1013,
+    description:
+      "Transformers fanfiction. You Thought This Was Going To Be A Fanfiction But Actually It's Perceptor Explaining Stability Theory to Shockwave",
+  },
+  {
+    name: "Bees Can't Fly",
+    link: "",
+  },
+];
+
 export const FictionWritingSection = () => {
   return (
     <>
@@ -7,27 +36,6 @@ export const FictionWritingSection = () => {
         published online.
       </p>
       <ul>
-        <li>
-          <em>
-            <a href="https://archiveofourown.org/works/40894746">
-              Minutes of the British Council
-            </a>
-          </em>
-          (949 words) - Crusader Kings 2 fanfiction. The Shahanshah has a
-          discussion with his closest confidants after the conquest of the
-          world.
-        </li>
-        <li>
-          <em>
-            <a href="https://archiveofourown.org/works/40589124">
-              You Thought This Was Going To Be A Fanfiction But Actually It's
-              Perceptor Explaining Stability Theory to Shockwave
-            </a>
-          </em>
-          (1013 words) - Transformers fanfiction. You Thought This Was Going To
-          Be A Fanfiction But Actually It's Perceptor Explaining Stability
-          Theory to Shockwave
-        </li>
         <li>
           <em>
             <a href="https://archiveofourown.org/works/40520514">
