@@ -1,12 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { her, her2 } from "./assets/assets";
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [mouseOver, setMouseOver] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div
+          onMouseOver={() => setMouseOver(true)}
+          onMouseOut={() => setMouseOver(false)}
+        >
+          <img src={mouseOver ? her : her2} className="App-logo" alt="logo" />
+        </div>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
