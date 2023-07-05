@@ -7,7 +7,7 @@ import {
   BlogPostListSection,
   ContactMeSection,
   SecretMessageSection,
-} from "./HomePageSections";
+} from "./HomePageSections/HomePageSections";
 
 export const Homepage = () => {
   const [mouseOver, setMouseOver] = useState(false);
