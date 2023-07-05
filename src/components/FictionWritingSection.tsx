@@ -1,12 +1,12 @@
 type Work = {
   name: string;
-  wordcount: number;
-  complete: boolean;
+  wordcount?: number;
+  incomplete?: boolean;
   description: string;
   link: string;
 };
 
-const fiction = [
+const fiction: Work[] = [
   {
     name: "Minutes of the British Council",
     wordcount: 949,
@@ -23,7 +23,30 @@ const fiction = [
   },
   {
     name: "Bees Can't Fly",
-    link: "",
+    link: "https://archiveofourown.org/works/40520514",
+    wordcount: 463,
+    description: "According to all known laws of aviation,",
+  },
+  {
+    name: "When We Learned of Trump",
+    link: "https://archiveofourown.org/works/24324157",
+    wordcount: 2444,
+    description:
+      "When Donald Trump was elected, he set the clocks back 50 years. Then the next election came, and the next.",
+  },
+  {
+    name: "k/Harvesters",
+    wordcount: 323,
+    description:
+      "The social media site of the Harvesters and their exciting lives and times in the Spires of the Black Orb.",
+    incomplete: true,
+    link: "https://archiveofourown.org/works/30743807/chapters/75878828",
+  },
+  {
+    name: "Some stuff on the Verse and Dimensions Wiki",
+    link: "https://verse-and-dimensions.fandom.com/wiki/User:Holomanga",
+    description:
+      "Collaborative fiction about cosmic entities where omnipotence is considered somewhere in the middle of the scale. I write there under the username Holomanga.",
   },
 ];
 
@@ -35,45 +58,21 @@ export const FictionWritingSection = () => {
         Sometimes I like to write fiction; here are links to stuff that I've
         published online.
       </p>
-      <ul>
-        <li>
-          <em>
-            <a href="https://archiveofourown.org/works/40520514">
-              Bees Can't Fly
-            </a>
-          </em>
-          (463 words) - According to all known laws of aviation,
-        </li>
-        <li>
-          <em>
-            <a href="https://archiveofourown.org/works/24324157">
-              When We Learned of Trump
-            </a>
-          </em>
-          (2444 words) - When Donald Trump was elected, he set the clocks back
-          50 years. Then the next election came, and the next.
-        </li>
-        <li>
-          <em>
-            <a href="https://archiveofourown.org/works/30743807/chapters/75878828">
-              k/Harvesters
-            </a>
-          </em>
-          (323 words, incomplete) - The social media site of the Harvesters and
-          their exciting lives and times in the Spires of the Black Orb.
-        </li>
-        <li>
-          Some stuff on the
-          <em>
-            <a href="https://verse-and-dimensions.fandom.com/wiki/User:Holomanga">
-              Verse and Dimensions Wiki
-            </a>
-          </em>
-          - Collaborative fiction about cosmic entities where omnipotence is
-          considered somewhere in the middle of the scale. I write there under
-          the username Holomanga.
-        </li>
-      </ul>
+      {fiction.map((work) => {
+        const wcNotePresent = work.wordcount || work.incomplete;
+        const wcNote = wcNotePresent
+          ? `(${(work.wordcount ? [`${work.wordcount} words`] : [])
+              .concat(work.incomplete ? [`incomplete`] : [])
+              .join(", ")})`
+          : "";
+        return (
+          <li>
+            <p>
+              <a href={work.link}>{work.name}</a> {wcNote} - {work.description}
+            </p>
+          </li>
+        );
+      })}
     </>
   );
 };
