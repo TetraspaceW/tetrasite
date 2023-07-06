@@ -395,7 +395,7 @@ export const donations: Donation[] = [
           meta funding as of approximately the time of this donation was{" "}
           <a href="https://80000hours.org/2021/08/effective-altruism-allocation-resources-cause-areas/">
             $26,000,000/year
-          </a>
+          </a>{" "}
           according to Benjamin Todd's estimates, much larger than what I am
           giving, so I'm unlikely to hit diminishing returns), there's only
           upside: at worst you'll donate the same expected monetary amount to
