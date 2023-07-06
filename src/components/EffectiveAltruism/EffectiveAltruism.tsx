@@ -5,7 +5,7 @@ import donationsChart from "../../assets/donationsChart.svg";
 export const EffectiveAltruism = () => {
   return (
     <>
-      <PageHeader title="Effective Altruism" lastUpdated="2023-06-09" />
+      <PageHeader title="Effective Altruism" lastUpdated="2023-07-06" />
       <h2>Where to Give?</h2>
       <h2>My Donations</h2>
       <p>

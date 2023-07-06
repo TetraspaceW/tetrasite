@@ -1,13 +1,22 @@
-type PageHeaderProps = { title: string; lastUpdated?: string };
+type PageHeaderProps = {
+  title: string;
+  created?: string;
+  lastUpdated?: string;
+};
 
-export const PageHeader = ({ title, lastUpdated }: PageHeaderProps) => {
+export const PageHeader = ({
+  title,
+  created,
+  lastUpdated,
+}: PageHeaderProps) => {
   return (
     <>
       <p>
-        <a href="./">Return home</a>
+        <a href="/">Return home</a>
       </p>
       <h1>{title}</h1>
-      {lastUpdated && <em>Last updated: {lastUpdated}</em>}
+      {created && <em>Created: {created}. </em>}
+      {lastUpdated && <em>Last updated: {lastUpdated}. </em>}
     </>
   );
 };
