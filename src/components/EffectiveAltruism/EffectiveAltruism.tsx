@@ -7,6 +7,36 @@ export const EffectiveAltruism = () => {
     <>
       <PageHeader title="Effective Altruism" lastUpdated="2023-07-06" />
       <h2>Where to Give?</h2>
+      <p>
+        For small donors, I currenly think that the best place to give, absent
+        matching schemes, is to a donor lottery, like the one that Giving What
+        We Can{" "}
+        <a href="https://www.givingwhatwecan.org/donor-lottery">
+          is currently running.
+        </a>{" "}
+        This is because, assuming that you're risk neutral (which you probably
+        should be, if you're a small donor and hence are donating a small amount
+        compared to the amount dedicated to optimising in your cause area),
+        there's only upside: at worst you'll donate the same expected monetary
+        amount to wherever you were going to donate, and you can also spend time
+        evaluating where to donate to find somewhere even better. Given that
+        there is increasing marginal utility from it being optimal to spend more
+        effort evaluating with a larger bankroll, the largest donor lottery (up
+        until one starts hitting significant diminishing returns) is the best to
+        give to.
+      </p>
+      <p>
+        On the object level, because "Donor Lottery" is somewhat of a copout and
+        passing the buck, I'm not so sure where to give. I think giving to the{" "}
+        <a href="https://intelligence.org">
+          Machine Intelligence Research Institute
+        </a>{" "}
+        (MIRI) might be a good idea; I think that, if there are alignment plans
+        that have a large amount of hope, MIRI would be able to notice them, and
+        merge and assist towards that; and otherwise I don't expect MIRI to
+        spend money on things that are alignment-themed but that they don't
+        think would help.
+      </p>
       <h2>My Donations</h2>
       <p>
         The following is a list of every charitable donation I have made, as of
