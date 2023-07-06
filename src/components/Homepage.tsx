@@ -19,14 +19,16 @@ export const Homepage = () => {
       <img
         src={mouseOver ? her : her2}
         className="her-image"
-        alt="logo"
+        alt="Smiling StyleGAN-generated portrait of an anime girl with white hair in a fluffy bob, pink eyes, a flower-like AI generation artefact in her hair, and a shirt collar."
         onMouseOver={() => setMouseOver(true)}
         onMouseOut={() => setMouseOver(false)}
       />
-      <p>💎</p>
+      <center>
+        <p>💎</p>
+      </center>
       <p>
-        This is the home page of 💎 Tetraspace 💎, and will probably at some
-        point in the future contain lots of cool Tetraspace facts and content!
+        This is the home page of 💎 Tetraspace 💎, and is the place for lots of
+        cool Tetraspace facts and content!
       </p>
       <ThingsICareAboutSection />
       <ShillsListSection />

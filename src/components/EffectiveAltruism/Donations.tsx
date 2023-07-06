@@ -549,7 +549,7 @@ export const donations: Donation[] = [
         was split between them and it seems that MIRI is efficient with respect
         to the alignment community, in the sense that if there's some avenue
         that has a large amount of hope, MIRI would be working on that. One{" "}
-        <a href="/blog/against-donor-lottery.html">
+        <a href="/blog/against-donor-lottery">
           reason you might not give to a donor lottery
         </a>
         is if the overhead of a donor lottery isn't worth the additional
