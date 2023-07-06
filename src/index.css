@@ -55,3 +55,7 @@ body {
     margin-right: -5%;
   }
 }
+
+.table-nowrap-cell {
+  white-space: nowrap;
+}
