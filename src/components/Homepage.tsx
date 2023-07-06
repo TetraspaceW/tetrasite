@@ -13,7 +13,7 @@ export const Homepage = () => {
   const [mouseOver, setMouseOver] = useState(false);
 
   return (
-    <div className="main">
+    <>
       <h1 className="homepage-header">Welcome to my web site!</h1>
 
       <img
@@ -34,6 +34,6 @@ export const Homepage = () => {
       <BlogPostListSection />
       <ContactMeSection />
       <SecretMessageSection />
-    </div>
+    </>
   );
 };
