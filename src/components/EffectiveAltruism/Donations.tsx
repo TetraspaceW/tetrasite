@@ -508,7 +508,7 @@ export const donations: Donation[] = [
           are panning out; see the{" "}
           <a href="https://www.lesswrong.com/s/v55BhXbpJuaExkpcD">
             2022 MIRI Alignment Discussion
-          </a>
+          </a>{" "}
           posts and the{" "}
           <a href="https://www.lesswrong.com/s/n945eovrA3oDueqtq">
             2021 MIRI Conversations
