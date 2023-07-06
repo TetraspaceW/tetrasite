@@ -531,7 +531,7 @@ export const donations: Donation[] = [
     amount: 42.02,
     description: (
       <p>
-        Part two of my monthly donation to make use of
+        Part two of my monthly donation to make use of{" "}
         <a href="https://blog.every.org/fallgivingchallenge-the-monthly-match/">
           every.org's matching funds
         </a>
