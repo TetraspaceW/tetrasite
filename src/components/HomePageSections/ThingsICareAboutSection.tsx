@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export const ThingsICareAboutSection = () => {
   return (
     <>
       <h2>Things I Care About</h2>
       <p>
         I am a big fan of rationalism and{" "}
-        <a href="#/effective-altruism">effective altruism</a>. I think at some
-        point this century, the Singularity will occur, in which AIs become
+        <Link to="/effective-altruism">effective altruism</Link>. I think at
+        some point this century, the Singularity will occur, in which AIs become
         smarter than people in the non-metaphorical impossible-to-miss way that
         results in things like planets being dismantled, and that we are
         currently not on track for this to happen in a way that leaves

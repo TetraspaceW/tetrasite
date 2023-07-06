@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Donation = {
   date: string;
   organisation: Organisation;
@@ -549,9 +551,9 @@ export const donations: Donation[] = [
         was split between them and it seems that MIRI is efficient with respect
         to the alignment community, in the sense that if there's some avenue
         that has a large amount of hope, MIRI would be working on that. One{" "}
-        <a href="#/blog/against-donor-lottery">
+        <Link to="/blog/against-donor-lottery">
           reason you might not give to a donor lottery
-        </a>
+        </Link>{" "}
         is if the overhead of a donor lottery isn't worth the additional
         benefit, and I don't strongly expect looking to find something reliably
         better than MIRI that MIRI itself can't find, or if they think they
