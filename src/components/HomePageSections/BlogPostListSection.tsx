@@ -9,7 +9,7 @@ export const BlogPostListSection = () => {
       <ul>
         <li>
           <em>2021-08-19</em>:{" "}
-          <a href="./blog/against-donor-lottery.html">
+          <a href="./blog/against-donor-lottery">
             Reasons why one might not give to a donor lottery
           </a>
         </li>
