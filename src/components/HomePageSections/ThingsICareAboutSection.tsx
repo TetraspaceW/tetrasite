@@ -4,7 +4,7 @@ export const ThingsICareAboutSection = () => {
       <h2>Things I Care About</h2>
       <p>
         I am a big fan of rationalism and{" "}
-        <a href="./effective-altruism">effective altruism</a>. I think at some
+        <a href="#/effective-altruism">effective altruism</a>. I think at some
         point this century, the Singularity will occur, in which AIs become
         smarter than people in the non-metaphorical impossible-to-miss way that
         results in things like planets being dismantled, and that we are
