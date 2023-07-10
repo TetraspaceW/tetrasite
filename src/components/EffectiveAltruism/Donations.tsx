@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-type Donation = {
+export type DonationData = {
   date: string;
   organisation: Organisation;
   causeArea: CauseArea;
@@ -80,7 +80,7 @@ const organisations = {
   },
 };
 
-export const donations: Donation[] = [
+export const donations: DonationData[] = [
   {
     date: "2020-09-30",
     organisation: organisations.ltff,

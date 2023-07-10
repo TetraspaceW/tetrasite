@@ -1,6 +1,7 @@
 import { PageHeader } from "../PageHeader";
 import { donations } from "./Donations";
 import donationsChart from "../../assets/donationsChart.svg";
+import { Donation } from "./Donation";
 
 export const EffectiveAltruism = () => {
   return (
@@ -53,32 +54,9 @@ export const EffectiveAltruism = () => {
           <th>Amount</th>
           <th>Explanation</th>
         </tr>
-        {donations.map((donation) => {
-          // this sets area proportional to the donation amount
-          const amountSize = Math.round(
-            (5 * Math.sqrt(donation.amount)) /
-              Math.floor(Math.log10(donation.amount) + 4)
-          );
-          const amountStyle = {
-            fontSize: `${amountSize}px`,
-          };
-
-          return (
-            <tr>
-              <td className="table-nowrap-cell">{donation.date}</td>
-              <td>
-                <p>
-                  <a href={donation.organisation.url}>
-                    {donation.organisation.name}
-                  </a>
-                </p>
-              </td>
-              <td className="table-nowrap-cell">{donation.causeArea}</td>
-              <td style={amountStyle}>{`£${donation.amount.toFixed(2)}`}</td>
-              <td>{donation.description}</td>
-            </tr>
-          );
-        })}
+        {donations.map((donation) => (
+          <Donation donation={donation} />
+        ))}
       </table>
       <h2>Chart</h2>
       <p>Chart of my donations by cause area and date, up to 2023-01-09.</p>

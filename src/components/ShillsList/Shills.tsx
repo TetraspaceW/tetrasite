@@ -4,14 +4,14 @@ type ShillLink = {
   url: string;
 };
 
-type Shill = {
+export type ShillData = {
   shill: string;
   type: string;
   description: string;
   links: ShillLink | ShillLink[];
 };
 
-export const shills: Shill[] = [
+export const shills: ShillData[] = [
   {
     shill:
       "Hello Charlotte EP1: Junk Food, Gods and Teddy Bears / EP2: Requiem Aeternam Deo / Delirium / EP3: Childhood's End / Heaven's Gate",
