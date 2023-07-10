@@ -100,7 +100,8 @@ export const shills: Shill[] = [
   {
     shill: "The Last Transmission of Frodo Baggins",
     type: "Online short story. Lord of the Rings fanfiction",
-    description: "Frodo Baggins sails into the west.",
+    description:
+      "Frodo Baggins sails into the west. There are 178 citations at the end to various scientific papers and Tolkien books.",
     links: {
       location: "author's site",
       url: "http://www.nanomedicine.com/Frodo.htm",
@@ -144,7 +145,8 @@ export const shills: Shill[] = [
   {
     shill: "Puella Magi Madoka Magica",
     type: "Anime",
-    description: "",
+    description:
+      "Fighting monsters full-time after being recruited with incomplete information does not actually turn out to be the best way for teenagers to flourish.",
     links: {
       name: "Link",
       location: "KissCartoon",
@@ -165,7 +167,8 @@ export const shills: Shill[] = [
   {
     shill: "Kindness to Kin",
     type: "Short story",
-    description: "A silvery sphere descends from the sky to visit some aliens.",
+    description:
+      "A silvery sphere descends from the sky to visit some psychologically-alien aliens.",
     links: {
       name: "Link",
       location: "Reddit",
