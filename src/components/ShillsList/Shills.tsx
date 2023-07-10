@@ -172,4 +172,22 @@ export const shills: Shill[] = [
       url: "https://www.reddit.com/r/HFY/comments/lom9cb/kindness_to_kin/",
     },
   },
+  {
+    shill: "Bitter Wind Lullaby / Bitter Wind March",
+    type: "Hymn",
+    description:
+      "A pair of songs; a lullaby for a child in the stone age shivering in the cold and then-deadly winter. Listen to them in order!",
+    links: [
+      {
+        name: "Lullaby Link",
+        location: "Bandcamp",
+        url: "https://humanistculture.bandcamp.com/track/bitter-wind-lullaby-2",
+      },
+      {
+        name: "March Link",
+        location: "Bandcamp",
+        url: "https://humanistculture.bandcamp.com/track/bitter-wind-march-3",
+      },
+    ],
+  },
 ];
