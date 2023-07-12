@@ -54,7 +54,7 @@ export const EffectiveAltruism = () => {
           <th>Amount</th>
           <th>Explanation</th>
         </tr>
-        {donations.map((donation) => (
+        {donations.reverse().map((donation) => (
           <Donation donation={donation} />
         ))}
       </table>
