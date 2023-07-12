@@ -13,6 +13,11 @@ export const ContactMeSection = () => {
             @TetraspaceGrouping@mastodon.social
           </a>
         </li>
+        <li>
+          Bluesky -{" "}
+          <a href="https://bsky.app/profile/thetetra.space">thetetra.space</a>
+        </li>
+        <li>Matrix - @tetraspacewest:matrix.org</li>
         <li>Email - tetraspace.west at protonmail.com</li>
         <li>
           Substack -{" "}
