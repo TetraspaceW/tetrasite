@@ -35,14 +35,6 @@ const fiction: Work[] = [
       "When Donald Trump was elected, he set the clocks back 50 years. Then the next election came, and the next.",
   },
   {
-    name: "k/Harvesters",
-    wordcount: 323,
-    description:
-      "The social media site of the Harvesters and their exciting lives and times in the Spires of the Black Orb.",
-    incomplete: true,
-    link: "https://archiveofourown.org/works/30743807/chapters/75878828",
-  },
-  {
     name: "Some stuff on the Verse and Dimensions Wiki",
     link: "https://verse-and-dimensions.fandom.com/wiki/User:Holomanga",
     description:
