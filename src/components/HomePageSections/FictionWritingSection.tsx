@@ -51,16 +51,17 @@ export const FictionWritingSection = () => {
         published online.
       </p>
       {fiction.map((work) => {
-        const wcNotePresent = work.wordcount || work.incomplete;
+        const { wordcount, incomplete, link, name, description } = work;
+        const wcNotePresent = wordcount || incomplete;
         const wcNote = wcNotePresent
-          ? `(${(work.wordcount ? [`${work.wordcount} words`] : [])
-              .concat(work.incomplete ? [`incomplete`] : [])
+          ? `(${(wordcount ? [`${wordcount} words`] : [])
+              .concat(incomplete ? [`incomplete`] : [])
               .join(", ")})`
           : "";
         return (
           <li>
             <p>
-              <a href={work.link}>{work.name}</a> {wcNote} - {work.description}
+              <a href={link}>{name}</a> {wcNote} - {description}
             </p>
           </li>
         );
