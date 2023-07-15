@@ -6,7 +6,7 @@ import { Donation } from "./Donation";
 export const EffectiveAltruism = () => {
   return (
     <>
-      <PageHeader title="Effective Altruism" lastUpdated="2023-07-06" />
+      <PageHeader title="Effective Altruism" lastUpdated="2023-07-15" />
       <h2>Where to Give?</h2>
       <p>
         For small donors, I currenly think that the best place to give, absent
@@ -59,7 +59,7 @@ export const EffectiveAltruism = () => {
         ))}
       </table>
       <h2>Chart</h2>
-      <p>Chart of my donations by cause area and date, up to 2023-01-09.</p>
+      <p>Chart of my donations by cause area and date, up to 2023-07-15.</p>
       <center>
         <img
           src={donationsChart}
