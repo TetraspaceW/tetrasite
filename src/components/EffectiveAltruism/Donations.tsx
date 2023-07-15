@@ -440,7 +440,7 @@ export const donations: DonationData[] = [
           farming; I am not yet vegan, so I am doing this.
         </p>
         <p>
-          Since this was deliberately made as an
+          Since this was deliberately made as an{" "}
           <a href="https://forum.effectivealtruism.org/posts/Yix7BzSQLJ9TYaodG/ethical-offsetting-is-antithetical-to-ea">
             offset
           </a>
@@ -561,6 +561,24 @@ export const donations: DonationData[] = [
         to MIRI or to the Donor Lottery the Donor Lottery did feel somewhat
         unsatisfying.
       </p>
+    ),
+  },
+  {
+    date: "2023-07-15",
+    amount: 76.84,
+    organisation: organisations.awf,
+    causeArea: cause.a,
+    description: (
+      <>
+        <p>Offset meat consumption for 2022.</p>
+        <p>
+          Since this was deliberately made as an{" "}
+          <a href="https://forum.effectivealtruism.org/posts/Yix7BzSQLJ9TYaodG/ethical-offsetting-is-antithetical-to-ea">
+            offset
+          </a>
+          , I do not count this towards my 10% Try Giving pledge for 2023.
+        </p>
+      </>
     ),
   },
 ];

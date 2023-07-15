@@ -64,7 +64,7 @@ export const EffectiveAltruism = () => {
         <img
           src={donationsChart}
           alt={
-            "A chart of the table on this page, grouped by cause area. In chronological order: £565 in 2020, mostly to long-term causes. £3592 in 2021, mostly to the donor lottery with about a sixth to long-term causes and a small amount to other causes. £264 in 2022, split between long-term and global poverty causes with a small amount to other causes. £4010 in 2023, entirely to long-term causes."
+            "A chart of the table on this page, grouped by cause area. In chronological order: £565 in 2020, mostly to long-term causes. £3592 in 2021, mostly to the donor lottery with about a sixth to long-term causes and a small amount to other causes. £264 in 2022, split between long-term and global poverty causes with a small amount to other causes. £4087 in 2023, mostly to long-term causes with a small amount to animals."
           }
         />
       </center>
