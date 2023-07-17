@@ -15,6 +15,18 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
 .her-image {
   display: block;
   margin-left: auto;
