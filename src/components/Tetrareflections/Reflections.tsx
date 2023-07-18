@@ -22,7 +22,9 @@ export const reflections: ReflectionData[] = [
           can post the rest of my fanfictions
         </p>
         <blockquote>
-          <p>Ely: seems like something you can do to yourself already!</p>
+          <p>
+            <em>Ely</em>: seems like something you can do to yourself already!
+          </p>
           <p>
             if you believed you should make this update you already would have
           </p>
@@ -32,6 +34,42 @@ export const reflections: ReflectionData[] = [
           It has something of the nature of how I will predictably be a better
           chess player as well, but am not thereby better at chess for knowing
           that.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Tetra is Poly-by-Default",
+    date: new Date(2023, 6, 18),
+    body: (
+      <>
+        <p>
+          <a href="https://bsky.app/profile/thetetra.space/post/3k2s2ueqpwe2w">
+            Bisky:
+          </a>
+        </p>
+        <p>
+          poly discourse misses the mark for tetrabrains because MY experience
+          is that I spawned in poly the moment it was pointed out to me that
+          it's a thing.
+        </p>
+        <p>
+          once I was in a mono relationship for two weeks and my thoughts on
+          that matter was “I wish I could bring up poly, but I don't know if
+          that's an allowed move in this game, and affection is rare enough that
+          I don't want to rock the boat and lose it”
+        </p>
+        <p>lol hopefully I'm better at communicating nowadays</p>
+        <p>
+          anyway yeah that subtle note of discontent? that social pressure that
+          the bay areans feel to seek enlightened? that jealousy being squashed?
+          don't have em
+        </p>
+        <p>
+          highly recommend listening to subtle notes of discontent tho.
+          relationships are about u and u being happy and there are all kinds of
+          people with all kids of wants who would be happiest with different
+          things 💖
         </p>
       </>
     ),
@@ -60,6 +98,12 @@ export const reflections: ReflectionData[] = [
           would they, and while I have other things going on Tetra::Curiosity
           doesn't care about the usefulness it just wants to KNOW.
         </p>
+        <blockquote>
+          <p>
+            <em>noop_noob</em>: but consider: knowing certain things can make
+            you feel bad
+          </p>
+        </blockquote>
         <p>
           I think the biggest cost, if I stayed psychologically similar but
           somehow magically became the ghost of gossip gnosis, would be the
