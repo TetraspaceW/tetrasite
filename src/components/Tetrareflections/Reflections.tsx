@@ -13,7 +13,7 @@ export const reflections: ReflectionData[] = [
       <>
         <p>
           <a href="https://twitter.com/TetraspaceWest/status/1680362350539317248">
-            Twitter
+            Twitter:
           </a>
         </p>
         <p>
@@ -110,6 +110,38 @@ export const reflections: ReflectionData[] = [
           Burden of Knowledge; I would know about people being hurt, who don't
           want to be hurt, and be forbidden to help them, or even unrelated
           others.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Parts Squishing Parts",
+    date: new Date(19, 6, 2023),
+    body: (
+      <>
+        <p>
+          <a href="https://bsky.app/profile/thetetra.space/post/3k2tj3oqnag2g">
+            Bisky:
+          </a>
+        </p>
+        <p>
+          hm so consequences of my I don't want parts of me to have bad
+          incentives
+        </p>
+        <p>
+          “I” secretly don't want pushing through my anxiety to succeed, because
+          that would mean that some parts of me benefit from hurting other
+          parts, and those incentives are horrible.
+        </p>
+        <p>
+          where “I” and “want” are tenuous because I'm talking about different
+          desires and competing motivations and I don't know if I've named them
+          right or if they even exist, just playing with how things feel
+        </p>
+        <p>
+          I think more of my motivations and desires should be friends with each
+          other. And they're all me, and I love being me, so this should be
+          easy. Probably!
         </p>
       </>
     ),
