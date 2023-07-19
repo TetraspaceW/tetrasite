@@ -116,7 +116,7 @@ export const reflections: ReflectionData[] = [
   },
   {
     title: "Parts Squishing Parts",
-    date: new Date(19, 6, 2023),
+    date: new Date(2023, 6, 19),
     body: (
       <>
         <p>
