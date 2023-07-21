@@ -7,6 +7,7 @@ import {
   BlogPostListSection,
   ContactMeSection,
   SecretMessageSection,
+  TetrareflectionsSection,
 } from "./HomePageSections/HomePageSections";
 
 export const Homepage = () => {
@@ -32,9 +33,10 @@ export const Homepage = () => {
       </p>
       <ThingsICareAboutSection />
       <ShillsListSection />
+      <TetrareflectionsSection />
+      <ContactMeSection />
       <FictionWritingSection />
       <BlogPostListSection />
-      <ContactMeSection />
       <SecretMessageSection />
     </>
   );

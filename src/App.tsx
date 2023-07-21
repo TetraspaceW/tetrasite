@@ -5,6 +5,7 @@ import { ShillsList } from "./components/ShillsList/ShillsList";
 import { EffectiveAltruism } from "./components/EffectiveAltruism/EffectiveAltruism";
 import { AgainstDonorLottery } from "./components/AgainstDonorLottery";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { Tetrareflections } from "./components/Tetrareflections/Tetrareflections";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
               path="/blog/against-donor-lottery"
               element={<AgainstDonorLottery />}
             />
+            <Route path="/tetrareflections" element={<Tetrareflections />} />
           </Routes>
         </ScrollToTop>
       </HashRouter>
