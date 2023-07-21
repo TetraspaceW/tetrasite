@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-node@v2
       - name: Install dependencies
         run: npm install
-      - name: Build
-        run: npm run build
-      - name: Deploy static site to pages
+      - name: Configure git identitiy
+        run: git config --global user.email "holomanga@gmail.com"; git config --global user.name "TetraspaceW"
+      - name: Build and deploy static site to pages
         run: npm run deploy
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
