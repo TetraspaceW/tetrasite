@@ -103,8 +103,8 @@ export const shills: ShillData[] = [
     description:
       "Frodo Baggins sails into the west. There are 178 citations at the end to various scientific papers and Tolkien books.",
     links: {
-      location: "author's site",
-      url: "http://www.nanomedicine.com/Frodo.htm",
+      location: "author's site on Wayback Machine",
+      url: "https://web.archive.org/web/20230527203822/http://www.nanomedicine.com/Frodo.htm",
       name: "Link",
     },
   },
