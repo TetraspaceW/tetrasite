@@ -54,9 +54,11 @@ export const EffectiveAltruism = () => {
           <th>Amount</th>
           <th>Explanation</th>
         </tr>
-        {donations.reverse().map((donation) => (
-          <Donation donation={donation} />
-        ))}
+        {donations
+          .sort((a, b) => b.date.valueOf() - a.date.valueOf())
+          .map((donation) => (
+            <Donation donation={donation} />
+          ))}
       </table>
       <h2>Chart</h2>
       <p>Chart of my donations by cause area and date, up to 2023-07-15.</p>

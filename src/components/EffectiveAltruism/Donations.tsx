@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export type DonationData = {
-  date: string;
+  date: Date;
   organisation: Organisation;
   causeArea: CauseArea;
   description: JSX.Element;
@@ -82,7 +82,7 @@ const organisations = {
 
 export const donations: DonationData[] = [
   {
-    date: "2020-09-30",
+    date: new Date("2020-09-30"),
     organisation: organisations.ltff,
     causeArea: cause.lt,
     description: (
@@ -112,14 +112,14 @@ export const donations: DonationData[] = [
     amount: 50,
   },
   {
-    date: "2020-09-30",
+    date: new Date("2020-09-30"),
     organisation: organisations.ltff,
     causeArea: cause.lt,
     amount: 50,
     description: <></>,
   },
   {
-    date: "2020-11-11",
+    date: new Date("2020-11-11"),
     organisation: organisations.amf,
     causeArea: cause.gp,
     description: (
@@ -135,14 +135,14 @@ export const donations: DonationData[] = [
     amount: 18.75,
   },
   {
-    date: "2020-11-18",
+    date: new Date("2020-11-18"),
     organisation: organisations.ltff,
     causeArea: cause.lt,
     amount: 200,
     description: <></>,
   },
   {
-    date: "2020-11-20",
+    date: new Date("2020-11-20"),
     organisation: organisations.gw,
     causeArea: cause.gp,
     amount: 25,
@@ -158,7 +158,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2020-11-25",
+    date: new Date("2020-11-25"),
     organisation: organisations.dl,
     causeArea: cause.l,
     amount: 12.5,
@@ -173,14 +173,14 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2020-11-30",
+    date: new Date("2020-11-30"),
     organisation: organisations.ltff,
     causeArea: cause.lt,
     amount: 50,
     description: <></>,
   },
   {
-    date: "2020-12-01",
+    date: new Date("2020-12-01"),
     organisation: organisations.gd,
     causeArea: cause.gp,
     amount: 18.79,
@@ -203,7 +203,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2020-12-02",
+    date: new Date("2020-12-02"),
     description: (
       <p>
         <a href="https://www.every.org/">every.org</a> offers $25 charity
@@ -216,7 +216,7 @@ export const donations: DonationData[] = [
     organisation: organisations.miri,
   },
   {
-    date: "2020-12-15",
+    date: new Date("2020-12-15"),
     causeArea: cause.a,
     organisation: organisations.thl,
     amount: 32.81,
@@ -228,7 +228,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2020-12-18",
+    date: new Date("2020-12-18"),
     causeArea: cause.l,
     organisation: organisations.dl,
     amount: 50,
@@ -241,14 +241,14 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2020-12-22",
+    date: new Date("2020-12-22"),
     causeArea: cause.l,
     organisation: organisations.dl,
     amount: 50,
     description: <></>,
   },
   {
-    date: "2021-04-24",
+    date: new Date("2021-04-24"),
     causeArea: cause.lt,
     organisation: organisations.ltff,
     amount: 600,
@@ -260,7 +260,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2021-07-12",
+    date: new Date("2021-07-12"),
     causeArea: cause.e,
     organisation: organisations.fp_ccf,
     amount: 125,
@@ -291,7 +291,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2021-10-21",
+    date: new Date("2021-10-21"),
     amount: 73.31,
     causeArea: cause.m,
     organisation: organisations.cea,
@@ -338,7 +338,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2021-11-18",
+    date: new Date("2021-11-18"),
     amount: 14.11,
     causeArea: cause.nea,
     organisation: organisations.tdf,
@@ -359,7 +359,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2021-11-10",
+    date: new Date("2021-11-10"),
     amount: 73.95,
     causeArea: cause.m,
     organisation: organisations.fp,
@@ -377,7 +377,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2021-11-27",
+    date: new Date("2021-11-27"),
     amount: 2619.46,
     causeArea: cause.l,
     organisation: organisations.dl,
@@ -410,7 +410,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2021-12-12",
+    date: new Date("2021-12-12"),
     amount: 75,
     causeArea: cause.a,
     organisation: organisations.awf,
@@ -450,7 +450,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2022-07-18",
+    date: new Date("2022-07-18"),
     organisation: organisations.fp_ccf,
     causeArea: cause.e,
     amount: 147.24,
@@ -473,7 +473,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2022-10-10",
+    date: new Date("2022-10-10"),
     amount: 31.25,
     organisation: organisations.gw,
     causeArea: cause.gp,
@@ -488,7 +488,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2022-11-01",
+    date: new Date("2022-11-01"),
     amount: 43.57,
     organisation: organisations.miri,
     causeArea: cause.lt,
@@ -525,7 +525,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2022-12-01",
+    date: new Date("2022-12-01"),
     organisation: organisations.miri,
     causeArea: cause.lt,
     amount: 42.02,
@@ -540,7 +540,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2023-01-05",
+    date: new Date("2023-01-05"),
     amount: 4010.43,
     organisation: organisations.miri,
     causeArea: cause.lt,
@@ -564,7 +564,7 @@ export const donations: DonationData[] = [
     ),
   },
   {
-    date: "2023-07-15",
+    date: new Date("2023-07-15"),
     amount: 76.84,
     organisation: organisations.awf,
     causeArea: cause.a,

@@ -23,7 +23,7 @@ export const Donation = ({ donation }: DonationProps) => {
 
   return (
     <tr>
-      <td className="table-nowrap-cell">{date}</td>
+      <td className="table-nowrap-cell">{date.toISOString().split("T")[0]}</td>
       <td>
         <p>
           <a href={url}>{name}</a>
