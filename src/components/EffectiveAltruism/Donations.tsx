@@ -581,4 +581,42 @@ export const donations: DonationData[] = [
       </>
     ),
   },
+  {
+    date: new Date("2023-08-15"),
+    amount: 62.5,
+    organisation: organisations.awf,
+    causeArea: cause.a,
+    description: (
+      <>
+        <p>
+          So two things! Firstly, in my non-consequentialist carnist apology
+          donations, I forgot to take into account eggs and milk. Free range
+          eggs are -26.7 welfare points per kilogram with (
+          <a href="https://ourworldindata.org/grapher/per-capita-egg-consumption-kilograms-per-year?tab=chart&country=~GBR">
+            OWID chart
+          </a>
+          ), and milk is -0.1 welfare points per kilogram with 200 kg being
+          consumed a year (
+          <a href="https://ourworldindata.org/grapher/per-capita-milk-consumption?tab=chart&country=~GBR">
+            OWID chart
+          </a>
+          ), so over the last two years I've failed to account for another -1000
+          welfare points. Those have been added on to this donation.
+        </p>
+        <p>
+          Secondly, I am now vegetarian minus eggs minus milk, and plan to stay
+          that way, so I added on the welfare points cost up to when I started
+          being vegetarian in 2023. Just straightforwardly being vegetarian is
+          way more sensible than this farce I have going on!
+        </p>
+        <p>
+          Since this was deliberately made as an{" "}
+          <a href="https://forum.effectivealtruism.org/posts/Yix7BzSQLJ9TYaodG/ethical-offsetting-is-antithetical-to-ea">
+            offset
+          </a>
+          , I do not count this towards my 10% Try Giving pledge for 2023.
+        </p>
+      </>
+    ),
+  },
 ];
