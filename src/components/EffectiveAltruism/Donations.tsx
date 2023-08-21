@@ -604,10 +604,13 @@ export const donations: DonationData[] = [
           welfare points. Those have been added on to this donation.
         </p>
         <p>
-          Secondly, I am now vegetarian minus eggs minus milk, and plan to stay
-          that way, so I added on the welfare points cost up to when I started
-          being vegetarian in 2023. Just straightforwardly being vegetarian is
-          way more sensible than this farce I have going on!
+          Secondly, I am now vegetarian plus no eggs plus no milk except if it's
+          some random insignificant additive because I don't want many
+          complicated rules on whether I'm allowed to eat that is extremely
+          doomed for Tetraspaces, and plan to stay that way, so I added on the
+          welfare points cost up to when I started being vegetarian in 2023.
+          Just straightforwardly being vegetarian is way more sensible than this
+          farce I had going on! Recommend, factory farming is horrible.
         </p>
         <p>
           Since this was deliberately made as an{" "}
