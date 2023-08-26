@@ -6,7 +6,7 @@ import { Donation } from "./Donation";
 export const EffectiveAltruism = () => {
   return (
     <>
-      <PageHeader title="Effective Altruism" lastUpdated="2023-07-15" />
+      <PageHeader title="Effective Altruism" lastUpdated="2023-08-26" />
       <h2>Where to Give?</h2>
       <p>
         For small donors, I currenly think that the best place to give, absent

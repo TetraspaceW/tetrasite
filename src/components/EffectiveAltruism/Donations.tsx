@@ -112,7 +112,7 @@ export const donations: DonationData[] = [
     amount: 50,
   },
   {
-    date: new Date("2020-09-30"),
+    date: new Date("2020-10-30"),
     organisation: organisations.ltff,
     causeArea: cause.lt,
     amount: 50,
