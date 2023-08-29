@@ -591,7 +591,8 @@ export const donations: DonationData[] = [
         <p>
           So two things! Firstly, in my non-consequentialist carnist apology
           donations, I forgot to take into account eggs and milk. Free range
-          eggs are -26.7 welfare points per kilogram with (
+          eggs are -26.7 welfare points per kilogram with 11.37 kg being
+          consumed a year (
           <a href="https://ourworldindata.org/grapher/per-capita-egg-consumption-kilograms-per-year?tab=chart&country=~GBR">
             OWID chart
           </a>
