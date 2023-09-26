@@ -12,7 +12,10 @@ export const ContactMeSection = () => {
           <a href="https://bsky.app/profile/thetetra.space">thetetra.space</a>
         </li>
         <li>Matrix - @tetraspacewest:matrix.org</li>
-        <li>Manifold - <a href="https://manifold.markets/Tetraspace">Tetraspace</li>
+        <li>
+          Manifold -{" "}
+          <a href="https://manifold.markets/Tetraspace">Tetraspace</a>
+        </li>
         <li>Email - tetraspace.west at protonmail.com</li>
         <li>
           Mastodon -{" "}
