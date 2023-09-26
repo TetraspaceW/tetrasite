@@ -8,17 +8,18 @@ export const ContactMeSection = () => {
       </p>
       <ul>
         <li>
+          Bluesky -{" "}
+          <a href="https://bsky.app/profile/thetetra.space">thetetra.space</a>
+        </li>
+        <li>Matrix - @tetraspacewest:matrix.org</li>
+        <li>Manifold - <a href="https://manifold.markets/Tetraspace">Tetraspace</li>
+        <li>Email - tetraspace.west at protonmail.com</li>
+        <li>
           Mastodon -{" "}
           <a rel="me" href="https://mastodon.social/@TetraspaceGrouping">
             @TetraspaceGrouping@mastodon.social
           </a>
         </li>
-        <li>
-          Bluesky -{" "}
-          <a href="https://bsky.app/profile/thetetra.space">thetetra.space</a>
-        </li>
-        <li>Matrix - @tetraspacewest:matrix.org</li>
-        <li>Email - tetraspace.west at protonmail.com</li>
         <li>
           Substack -{" "}
           <a href="https://tetraspacegrouping.substack.com/">
