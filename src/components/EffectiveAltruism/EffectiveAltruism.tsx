@@ -6,14 +6,14 @@ import { Donation } from "./Donation";
 export const EffectiveAltruism = () => {
   return (
     <>
-      <PageHeader title="Effective Altruism" lastUpdated="2023-08-29" />
+      <PageHeader title="Effective Altruism" lastUpdated="2023-12-11" />
       <h2>Where to Give?</h2>
       <p>
         For small donors, I currenly think that the best place to give, absent
         matching schemes, is to a donor lottery, like the one that Giving What
         We Can{" "}
         <a href="https://www.givingwhatwecan.org/donor-lottery">
-          is currently running.
+          runs at the end of each year.
         </a>{" "}
         This is because, assuming that you're risk neutral (which you probably
         should be, if you're a small donor and hence are donating a small amount
@@ -27,8 +27,10 @@ export const EffectiveAltruism = () => {
         give to.
       </p>
       <p>
-        On the object level, because "Donor Lottery" is somewhat of a copout and
-        passing the buck, I'm not so sure where to give. I think giving to the{" "}
+        On the object level, because "Donor Lottery" is passing the buck to a
+        longer deliberation process and you might want my opinions on where that
+        deliberation process might end up, I'm not so sure where to give. I
+        think giving to the{" "}
         <a href="https://intelligence.org">
           Machine Intelligence Research Institute
         </a>{" "}

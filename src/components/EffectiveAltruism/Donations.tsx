@@ -78,6 +78,14 @@ const organisations = {
     name: "Animal Welfare Fund",
     url: "https://funds.effectivealtruism.org/funds/animal-welfare",
   },
+  gwwc: {
+    name: "Giving What We Can",
+    url: "https://www.givingwhatwecan.org/",
+  },
+  gfi: {
+    name: "Good Food Institute",
+    url: "https://gfi.org/",
+  },
 };
 
 export const donations: DonationData[] = [
@@ -621,6 +629,51 @@ export const donations: DonationData[] = [
           , I do not count this towards my 10% Try Giving pledge for 2023.
         </p>
       </>
+    ),
+  },
+  {
+    date: new Date("2023-11-17"),
+    amount: 187.5,
+    organisation: organisations.miri,
+    causeArea: cause.lt,
+    description: (
+      <>
+        <p>
+          The{" "}
+          <a href="https://forum.effectivealtruism.org/posts/hAzhyikPnLnMXweXG/participate-in-the-donation-election-and-the-first-weekly">
+            EA Forum Donation Election
+          </a>{" "}
+          is ongoing, and for nominating a charity requires that a fundraiser be
+          made that raises &gt;$50 for that charity. I expect that MIRI is
+          unlikely to win (Manifold has it{" "}
+          <a href="https://manifold.markets/Tetraspace/if-this-charity-is-on-the-ea-donor-cabc5f558eaf">
+            at 4%
+          </a>
+          , and probably that's an overestimate because of liquidity problems),
+          but because I was probably going to donate to MIRI anyway giving it a
+          chance at all of being on the donation election is +EV anyway. Maybe
+          there is an unknown grassroots groundswell of support! (There isn't).
+          This is £187.50, instead of $50.01, because I wasn't sure if the first
+          donation went through, and the second donation was taking quite a long
+          time to process and I wanted it to be nominated in time.
+        </p>
+        <p>
+          If you are reading this before the end of the Donation Election (on
+          the 15th December), then I do recommend voting for MIRI.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: new Date("2023-11-17"),
+    amount: 12.5,
+    organisation: organisations.gwwc,
+    causeArea: cause.m,
+    description: (
+      <p>
+        When I was donating to MIRI, GWWC prompted me to add 10% to my donation
+        to support GWWC operations, and hey, sure, why not.
+      </p>
     ),
   },
 ];
