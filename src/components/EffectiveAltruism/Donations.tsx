@@ -86,6 +86,10 @@ const organisations = {
     name: "Good Food Institute",
     url: "https://gfi.org/",
   },
+  de: {
+    name: "EA Forum Donation Election Fund",
+    url: "https://www.givingwhatwecan.org/en-GB/charities/ea-forum-donation-election-fund",
+  },
 };
 
 export const donations: DonationData[] = [
@@ -657,10 +661,6 @@ export const donations: DonationData[] = [
           donation went through, and the second donation was taking quite a long
           time to process and I wanted it to be nominated in time.
         </p>
-        <p>
-          If you are reading this before the end of the Donation Election (on
-          the 15th December), then I do recommend voting for MIRI.
-        </p>
       </>
     ),
   },
@@ -674,6 +674,90 @@ export const donations: DonationData[] = [
         When I was donating to MIRI, GWWC prompted me to add 10% to my donation
         to support GWWC operations, and hey, sure, why not.
       </p>
+    ),
+  },
+  {
+    date: new Date("2023-12-05"),
+    amount: 12.5,
+    organisation: organisations.de,
+    causeArea: cause.m,
+    description: (
+      <>
+        <p>
+          They{" "}
+          <a href="https://forum.effectivealtruism.org/posts/eZkApbMzBn8teQwju/donation-election-rewards">
+            give you a badge
+          </a>{" "}
+          next to your username on the EA forum if you donate to the fund.
+        </p>
+        <p>
+          Since this was made just to get the badge and not to impartially
+          maximise utility, I do not count this towards my 10% Try Giving pledge
+          for 2023.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: new Date("2023-12-23"),
+    amount: 3699.74,
+    organisation: organisations.dl,
+    causeArea: cause.l,
+    description: (
+      <>
+        <p>
+          The donor lottery was the destination for the usual reasons, the
+          amount is to make up the remaining of my 10% Try Giving pledge for
+          this year.
+        </p>
+        <p>
+          Because often when I mention the Donor Lottery people ask what the
+          donor lottery is, and tend to have the same few followup questions, I
+          wrote a pitch for them in
+          <a href="https://twitter.com/TetraspaceWest/status/1738634682084782367">
+            a Twitter thread
+          </a>
+          .
+        </p>
+        <p>
+          <blockquote cite="https://twitter.com/TetraspaceWest/status/1738634682084782367">
+            <p>just blew my entire donation budget on lottery tickets</p>
+            <p>donor lottery tickets 😎</p>
+            <p>
+              Donor lotteries: there is a pool of $100,000, and you win that
+              entire pool to grant to charities with a probability proportional
+              to how much you pay in; paying $1,000 gives you a 1% chance of
+              winning.
+            </p>
+            <p>
+              Because how effective a donation is increases with the effort you
+              spend evaluating where to eventually send it, this means that
+              <ul>
+                <li>
+                  the donation amount is the same in expectation (1% chance of
+                  donating $100k = 100% chance of donating 1k)
+                </li>
+                <li>
+                  and the donation is more effective, because if you win it will
+                  be worth you spending more time evaluating (1% chance of 101k
+                  utils &gt; 100% chance of 1k utils)
+                </li>
+              </ul>
+            </p>
+            <p>
+              It doesn't matter if the other people care about things you don't
+              care about, because this argument that it's +EV is independent of
+              the behaviour of the other participants.
+            </p>
+            <p>
+              (Though if lots of people participate in donor lotteries, more
+              donor lotteries will be run, so it might be a bad deal if other
+              participants being more effective by their standards makes the
+              world <em>worse</em> by your standards.)
+            </p>
+          </blockquote>
+        </p>
+      </>
     ),
   },
 ];

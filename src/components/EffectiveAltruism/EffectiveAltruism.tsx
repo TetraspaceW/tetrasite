@@ -6,7 +6,7 @@ import { Donation } from "./Donation";
 export const EffectiveAltruism = () => {
   return (
     <>
-      <PageHeader title="Effective Altruism" lastUpdated="2023-12-11" />
+      <PageHeader title="Effective Altruism" lastUpdated="2023-12-30" />
       <h2>Where to Give?</h2>
       <p>
         For small donors, I currenly think that the best place to give, absent
@@ -40,6 +40,24 @@ export const EffectiveAltruism = () => {
         spend money on things that are alignment-themed but that they don't
         think would help.
       </p>
+      <p>
+        For this year's donor lottery, I have made a prediction market over
+        where I will eventually donate to, if I am given the pool of money to
+        grant.
+      </p>
+      <iframe
+        src="https://manifold.markets/embed/Tetraspace/if-tetraspace-wins-the-donor-lotter"
+        title="If Tetraspace wins the donor lottery, where will she donate?"
+        style={{
+          position: "relative",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "90%",
+          height: "18rem",
+          maxWidth: "35rem",
+          border: "0",
+        }}
+      ></iframe>
       <h2>My Donations</h2>
       <p>
         The following is a list of every charitable donation I have made, as of
