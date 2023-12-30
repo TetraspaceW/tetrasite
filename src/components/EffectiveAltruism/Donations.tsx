@@ -713,7 +713,7 @@ export const donations: DonationData[] = [
         <p>
           Because often when I mention the Donor Lottery people ask what the
           donor lottery is, and tend to have the same few followup questions, I
-          wrote a pitch for them in
+          wrote a pitch for them in{" "}
           <a href="https://twitter.com/TetraspaceWest/status/1738634682084782367">
             a Twitter thread
           </a>
