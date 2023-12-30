@@ -1,7 +1,7 @@
 type PageHeaderProps = {
   title: string;
   created?: string;
-  lastUpdated?: string;
+  lastUpdated?: Date;
 };
 
 export const PageHeader = ({
@@ -16,7 +16,9 @@ export const PageHeader = ({
       </p>
       <h1>{title}</h1>
       {created && <em>Created: {created}. </em>}
-      {lastUpdated && <em>Last updated: {lastUpdated}. </em>}
+      {lastUpdated && (
+        <em>Last updated: {lastUpdated.toISOString().split("T")[0]}. </em>
+      )}
     </>
   );
 };

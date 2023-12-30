@@ -6,7 +6,10 @@ import { Donation } from "./Donation";
 export const EffectiveAltruism = () => {
   return (
     <>
-      <PageHeader title="Effective Altruism" lastUpdated="2023-12-30" />
+      <PageHeader
+        title="Effective Altruism"
+        lastUpdated={new Date("2023-12-30")}
+      />
       <h2>Where to Give?</h2>
       <p>
         For small donors, I currenly think that the best place to give, absent
@@ -81,12 +84,12 @@ export const EffectiveAltruism = () => {
           ))}
       </table>
       <h2>Chart</h2>
-      <p>Chart of my donations by cause area and date, up to 2023-07-15.</p>
+      <p>Chart of my donations by cause area and date, up to 2023-12-30.</p>
       <center>
         <img
           src={donationsChart}
           alt={
-            "A chart of the table on this page, grouped by cause area. In chronological order: £565 in 2020, mostly to long-term causes. £3592 in 2021, mostly to the donor lottery with about a sixth to long-term causes and a small amount to other causes. £264 in 2022, split between long-term and global poverty causes with a small amount to other causes. £4150 in 2023, mostly to long-term causes with a small amount to animals."
+            "A chart of the table on this page, grouped by cause area. In chronological order: £565 in 2020, mostly to long-term causes. £3592 in 2021, mostly to the donor lottery with about a sixth to long-term causes and a small amount to other causes. £264 in 2022, split between long-term and global poverty causes with a small amount to other causes. £8088 in 2023, split between long-term causes and the donor lottery with a small amount to other causes."
           }
         />
       </center>
