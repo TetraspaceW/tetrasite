@@ -1,7 +1,7 @@
 export const ContactMeSection = () => {
   return (
     <>
-      <h2>Contact Me!</h2>
+      <h2 id="contact">Contact Me!</h2>
       <p>
         I'm in some other places on the internet, and in some of those places,
         it's possible to talk to me. Here are some of the places where I am:
