@@ -1,3 +1,4 @@
+import React from "react";
 import { PageHeader } from "../PageHeader";
 import { donations } from "./Donations";
 import donationsChart from "../../assets/donationsChart.svg";

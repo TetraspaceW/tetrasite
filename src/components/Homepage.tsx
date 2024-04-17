@@ -1,5 +1,5 @@
 import { her, her2 } from "../assets/assets";
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   ThingsICareAboutSection,
   ShillsListSection,

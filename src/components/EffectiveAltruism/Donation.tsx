@@ -1,3 +1,5 @@
+import React from "react";
+
 import { DonationData } from "./Donations";
 
 type DonationProps = {

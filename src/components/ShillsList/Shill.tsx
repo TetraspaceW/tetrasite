@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ShillData } from "./Shills";
 
 type ShillProps = { shill: ShillData };

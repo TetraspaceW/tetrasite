@@ -1,3 +1,5 @@
+import React from "react";
+
 type PageHeaderProps = {
   title: string;
   created?: string;

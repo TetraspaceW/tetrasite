@@ -1,3 +1,5 @@
+import React from "react";
+
 type Work = {
   name: string;
   wordcount?: number;
@@ -55,8 +57,8 @@ export const FictionWritingSection = () => {
         const wcNotePresent = wordcount || incomplete;
         const wcNote = wcNotePresent
           ? `(${(wordcount ? [`${wordcount} words`] : [])
-              .concat(incomplete ? [`incomplete`] : [])
-              .join(", ")})`
+            .concat(incomplete ? [`incomplete`] : [])
+            .join(", ")})`
           : "";
         return (
           <li>

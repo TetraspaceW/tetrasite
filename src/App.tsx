@@ -1,12 +1,12 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { Homepage } from "./components/Homepage";
 import { ShillsList } from "./components/ShillsList/ShillsList";
 import { EffectiveAltruism } from "./components/EffectiveAltruism/EffectiveAltruism";
 import { AgainstDonorLottery } from "./components/AgainstDonorLottery";
 import { ScrollToTop } from "./components/ScrollToTop";
+import React from "react";
 
-function App() {
+export const App = () => {
   return (
     <div className="main">
       <HashRouter>
@@ -25,5 +25,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
