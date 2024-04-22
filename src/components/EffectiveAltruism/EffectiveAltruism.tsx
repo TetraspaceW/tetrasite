@@ -9,7 +9,7 @@ export const EffectiveAltruism = () => {
     <>
       <PageHeader
         title="Effective Altruism"
-        lastUpdated={new Date("2023-12-30")}
+        lastUpdated={new Date("2024-04-22")}
       />
       <h2>Where to Give?</h2>
       <p>
@@ -50,8 +50,8 @@ export const EffectiveAltruism = () => {
         grant.
       </p>
       <iframe
-        src="https://manifold.markets/embed/Tetraspace/if-tetraspace-wins-the-donor-lotter"
-        title="If Tetraspace wins the donor lottery, where will she donate?"
+        src="https://manifold.markets/Tetraspace/if-tetraspace-wins-the-2024-donor-l"
+        title="If Tetraspace wins the 2024 donor lottery, where will she donate?"
         style={{
           position: "relative",
           left: "50%",
