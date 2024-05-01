@@ -6,7 +6,7 @@ import {
   FictionWritingSection,
   BlogPostListSection,
   ContactMeSection,
-  SecretMessageSection,
+  InvisibleMessageSection,
 } from "./HomePageSections/HomePageSections";
 import { parseQueryString } from "./helpers";
 
@@ -50,7 +50,7 @@ export const Homepage = () => {
       <ContactMeSection />
       <FictionWritingSection />
       <BlogPostListSection />
-      <SecretMessageSection />
+      <InvisibleMessageSection />
     </>
   );
 };
