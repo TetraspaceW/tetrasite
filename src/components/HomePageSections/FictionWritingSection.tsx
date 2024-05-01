@@ -57,11 +57,11 @@ export const FictionWritingSection = () => {
         const wcNotePresent = wordcount || incomplete;
         const wcNote = wcNotePresent
           ? `(${(wordcount ? [`${wordcount} words`] : [])
-            .concat(incomplete ? [`incomplete`] : [])
-            .join(", ")})`
+              .concat(incomplete ? [`incomplete`] : [])
+              .join(", ")})`
           : "";
         return (
-          <li>
+          <li key={name}>
             <p>
               <a href={link}>{name}</a> {wcNote} - {description}
             </p>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 type PageHeaderProps = {
   title: string;
@@ -14,7 +15,7 @@ export const PageHeader = ({
   return (
     <>
       <p>
-        <a href="/">Return home</a>
+        <Link to="/">Return home</Link>
       </p>
       <h1>{title}</h1>
       {created && <em>Created: {created}. </em>}

@@ -12,7 +12,7 @@ import { parseQueryString } from "./helpers";
 
 export const Homepage = () => {
   const [mouseOver, setMouseOver] = useState(false);
-  const isUwu = parseQueryString(window.location.search).has("uwu");
+  const [isUwu] = useState(parseQueryString(window.location.search).has("uwu"));
 
   return (
     <>
@@ -27,17 +27,20 @@ export const Homepage = () => {
           />
         </a>
       ) : (
-        <img
-          src={mouseOver ? her : her2}
-          className="her-image"
-          alt="Smiling StyleGAN-generated portrait of an anime girl with white hair in a fluffy bob, pink eyes, a flower-like AI generation artefact in her hair, and a shirt collar."
-          onMouseOver={() => setMouseOver(true)}
-          onMouseOut={() => setMouseOver(false)}
-        />
+        <>
+          <img
+            src={mouseOver ? her : her2}
+            className="her-image"
+            alt="Smiling StyleGAN-generated portrait of an anime girl with white hair in a fluffy bob, pink eyes, a flower-like AI generation artefact in her hair, and a shirt collar."
+            onMouseOver={() => setMouseOver(true)}
+            onMouseOut={() => setMouseOver(false)}
+          />
+          <center>
+            <p>💎</p>
+          </center>
+        </>
       )}
-      <center>
-        <p>💎</p>
-      </center>
+
       <p>
         This is the home page of 💎 Tetraspace 💎, and is the place for lots of
         cool Tetraspace facts and content!
