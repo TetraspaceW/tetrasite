@@ -5,6 +5,7 @@ import { EffectiveAltruism } from "./components/EffectiveAltruism/EffectiveAltru
 import { AgainstDonorLottery } from "./components/AgainstDonorLottery";
 import { ScrollToTop } from "./components/ScrollToTop";
 import React from "react";
+import { FutarchyYourself } from "./components/FutarchyYourself/FutarchyYourself";
 
 export const App = () => {
   return (
@@ -19,9 +20,10 @@ export const App = () => {
               path="/blog/against-donor-lottery"
               element={<AgainstDonorLottery />}
             />
+            <Route path="/futarchy" element={<FutarchyYourself />} />
           </Routes>
         </ScrollToTop>
       </HashRouter>
     </div>
   );
-}
+};

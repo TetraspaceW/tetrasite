@@ -68,3 +68,12 @@ h6 {
 .table-nowrap-cell {
   white-space: nowrap;
 }
+
+.manifold-embed {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 18rem;
+  max-width: 35rem;
+}
