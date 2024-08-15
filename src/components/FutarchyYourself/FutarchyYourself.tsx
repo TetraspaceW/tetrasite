@@ -1,6 +1,7 @@
 import React from "react";
 import { PageHeader } from "../PageHeader";
 import { Manifold } from "./Manifold";
+import { Comparison } from "./Comparison";
 
 export const FutarchyYourself = () => {
   return (
@@ -70,9 +71,9 @@ export const FutarchyYourself = () => {
           I know not what Newsom and Whitmer's policies would have been. A prior
           informed by kbog's random guess is that Democratic candidates are
           about as good as each other, and Donald Trump is really really bad,
-          and based on that prior my first guess would be how these candidates
-          would influence the chances of any Democratic winning the presidential
-          election.
+          and based on that prior my first guess as to how good these candidates
+          are would be how these candidates would influence the chances of any
+          Democratic winning the presidential election.
         </p>
         <p>
           From the conditional market, Whitmer had about a 60% chance of winning
@@ -129,52 +130,58 @@ export const FutarchyYourself = () => {
           two eventual finalists):
         </p>
         <table border={1}>
-          <tr>
+          <thead>
             <th>Candidate</th>
             <th>P(win|VP)</th>
-          </tr>
-          <tr>
-            <td>
-              <strong>Josh Shapiro</strong>
-            </td>
-            <td>
-              <strong>46%</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>Mark Kelly</td>
-            <td>45%</td>
-          </tr>
-          <tr>
-            <td>Pete Buttigieg</td>
-            <td>44%</td>
-          </tr>
-          <tr>
-            <td>Gretchen Whitmer</td>
-            <td>44%</td>
-          </tr>
-          <tr>
-            <td>
-              <strong>Tim Walz</strong>
-            </td>
-            <td>
-              <strong>43%</strong>
-            </td>
-          </tr>
-          <tr>
-            <td>Andy Beshear</td>
-            <td>42%</td>
-          </tr>
-          <tr>
-            <td>Roy Cooper</td>
-            <td>41%</td>
-          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Josh Shapiro</strong>
+              </td>
+              <td>
+                <strong>46%</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Mark Kelly</td>
+              <td>45%</td>
+            </tr>
+            <tr>
+              <td>Pete Buttigieg</td>
+              <td>44%</td>
+            </tr>
+            <tr>
+              <td>Gretchen Whitmer</td>
+              <td>44%</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Tim Walz</strong>
+              </td>
+              <td>
+                <strong>43%</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>Andy Beshear</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>Roy Cooper</td>
+              <td>41%</td>
+            </tr>
+          </tbody>
         </table>
         <p>
           There was about a 5% difference between the top and bottom VP
-          candidates by probability of winning, with Josh Shapiro leading mostly
-          because he was the popular governor of Pennsylvania, a swing state
-          with 20 electors.
+          candidates by probability of winning, with{" "}
+          <a href="https://www.vox.com/politics/364677/tim-walz-harris-vp-josh-shapiro">
+            Josh Shapiro
+          </a>{" "}
+          leading plausibly because he is the popular incumbent governor of
+          Pennsylvania, a swing state with 20 electors, and because he is more
+          moderate than Walz.
         </p>
         <Manifold slug="NathanpmYoung/would-harris-win-if-this-person-wer" />
       </details>
@@ -182,6 +189,43 @@ export const FutarchyYourself = () => {
         As such, the single choice point is who to vote for in the presidential
         election.
       </p>
+      <h3>Air Pollution</h3>
+      <Comparison
+        data={[
+          {
+            candidate: "Kamala Harris",
+            metrics: ["Tetraspace/if-harris-wins-will-annual-us-co2-e"],
+          },
+          {
+            candidate: "Donald Trump",
+            metrics: ["NcyRocks/carbon-brief-forecast-if-trump-wins"],
+          },
+        ]}
+      />
+      <h3>Criminal Justice</h3>
+      <h3>Immigration</h3>
+      <Comparison
+        data={[
+          {
+            candidate: "Kamala Harris",
+            metrics: ["Tetraspace/if-trump-wins-will-undocumented-imm"],
+          },
+          {
+            candidate: "Donald Trump",
+            metrics: ["voodoo/if-trump-wins-will-immigration-go-d"],
+          },
+        ]}
+      />
+      <h3>Foreign Aid</h3>
+      <Comparison
+        data={[
+          {
+            candidate: "Kamala Harris",
+            metrics: [],
+          },
+        ]}
+      />
+      <h3>Democracy</h3>
     </>
   );
 };
