@@ -1,5 +1,5 @@
 import React from "react";
-import { PageHeader } from "../PageHeader";
+import { PageHeader } from "../Page";
 import { donations } from "./Donations";
 import donationsChart from "../../assets/donationsChart.svg";
 import { Donation } from "./Donation";

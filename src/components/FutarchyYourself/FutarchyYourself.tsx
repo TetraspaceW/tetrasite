@@ -1,5 +1,5 @@
 import React from "react";
-import { PageHeader } from "../PageHeader";
+import { PageHeader } from "../Page";
 import { Manifold } from "./Manifold";
 import { Comparison } from "./Comparison";
 

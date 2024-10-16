@@ -6,6 +6,7 @@ import { AgainstDonorLottery } from "./components/AgainstDonorLottery";
 import { ScrollToTop } from "./components/ScrollToTop";
 import React from "react";
 import { FutarchyYourself } from "./components/FutarchyYourself/FutarchyYourself";
+import { GoToSpace } from "./components/FutarchyYourself/GoToSpace";
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
               element={<AgainstDonorLottery />}
             />
             <Route path="/futarchy" element={<FutarchyYourself />} />
+            <Route path="/futarchy/go-to-space" element={<GoToSpace />} />
           </Routes>
         </ScrollToTop>
       </HashRouter>

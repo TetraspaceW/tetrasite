@@ -1,6 +1,6 @@
 import React from "react";
 
-import { PageHeader } from "../PageHeader";
+import { PageHeader } from "../Page";
 import { Shill } from "./Shill";
 import { shills } from "./Shills";
 

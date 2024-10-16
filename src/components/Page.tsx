@@ -1,7 +1,7 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
-type PageHeaderProps = {
+export type PageHeaderProps = {
   title: string;
   created?: string;
   lastUpdated?: Date;
@@ -25,3 +25,10 @@ export const PageHeader = ({
     </>
   );
 };
+
+export const Page = ({
+  children,
+  ...headerProps
+}: { children: ReactNode[] } & PageHeaderProps) => (
+  <PageHeader {...headerProps}>{children}</PageHeader>
+);
