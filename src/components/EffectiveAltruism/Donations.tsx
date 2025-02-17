@@ -1,4 +1,4 @@
-import React from "react";
+import React, { JSX } from "react";
 import { Link } from "react-router-dom";
 
 export type DonationData = {
