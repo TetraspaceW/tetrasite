@@ -38,9 +38,7 @@ export const EffectiveAltruism = () => {
         <a href="https://intelligence.org">
           Machine Intelligence Research Institute
         </a>{" "}
-        (MIRI) might be a good idea; I think that, if there are alignment plans
-        that have a large amount of hope, MIRI would be able to notice them, and
-        merge and assist towards that; and otherwise I don't expect MIRI to
+        (MIRI) might be a good idea; I don't expect MIRI to
         spend money on things that are alignment-themed but that they don't
         think would help.
       </p>
