@@ -6,7 +6,7 @@ export const ThingsICareAboutSection = () => {
     <>
       <h2>Things I Care About</h2>
       <p>
-        I am a big fan of rationalism and{" "}
+        I am a medium-sized fan of rationalism and{" "}
         <Link to="/effective-altruism">effective altruism</Link>. I think at
         some point this century, the Singularity will occur, in which AIs become
         smarter than people in the non-metaphorical impossible-to-miss way that
