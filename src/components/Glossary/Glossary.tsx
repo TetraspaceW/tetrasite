@@ -151,7 +151,7 @@ const glossaryEntries = [
 export const Glossary = () => {
   return (
     <>
-      <PageHeader title="Glossary" lastUpdated={new Date("2025-03-14")} />
+      <PageHeader title="Glossary" lastUpdated={new Date("2025-11-17")} />
       <h2>Tetraglossary</h2>
       {glossaryEntries
         .sort((a, b) => (a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 1))
