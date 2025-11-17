@@ -66,8 +66,8 @@ const glossaryEntries = [
     definition: (
       <>
         God of weight gain, enjoying things rules, and immortality. Other people
-        complain about Urgathoa and say shes "evil" and "spreads plagues of
-        undead", but
+        complain about Urgathoa and say she's "evil" and "spreads plagues of
+        undead", but <em>chuckles</em> I find it difficult to imagine a god with these domains could ever be bad.
       </>
     ),
   },
@@ -119,7 +119,7 @@ const glossaryEntries = [
     term: "econworm",
     definition: (
       <>
-        The dominant lifeform of the far future. The econworm has a single goal,
+        The dominant lifeform of the far future, in my model when I feel very sad. The econworm has a single goal,
         to duplicate itself, and constantly feels like it's on fire, only
         getting slight relief when it duplicates itself. The econworm isn't
         mindless, it's as intelligent as it needs to be to compete with other
@@ -129,9 +129,7 @@ const glossaryEntries = [
         motivated to duplicate itself. They do not have friendship because
         defection is locally better than cooperation; all available energy is
         being captured by other econworms which must be eaten to duplicate and
-        get slight relief. Econworms are a necessary outcome in the future,
-        because the most motivated duplicator necessarily becomes the post
-        common pattern. Econworms are not real and will never be real. Please do
+        get slight relief. Econworms are not real and will never be real. Please do
         not act like one.
       </>
     ),
