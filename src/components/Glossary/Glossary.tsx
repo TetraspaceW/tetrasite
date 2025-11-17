@@ -59,7 +59,7 @@ const glossaryEntries = [
   },
   {
     term: "Kofusachi",
-    definition: <>Gay Abadar</>,
+    definition: <>Gay Abadar.</>,
   },
   {
     term: "Urgathoa",
@@ -151,31 +151,31 @@ const glossaryEntries = [
     term: "realityfluid",
     definition: (
       <>
+        <>
+          Realityfluid is the as-yet unsolved measure of how real something is, it
+          originates from EY's thinking about QM where the probabilities of you
+          observing e.g. the spin of an electron when it's prepared in the state
+          |up⟩+2|down⟩ is 20% chance of spin up and 80% chance of spin down. now
+          whether you observe the electron spinning up or down, you're still you,
+          you still experience things happening fully. So what's the difference
+          between up-you and down-you, such that you care about things happening
+          to down-you four times more strongly before you measure the electron?
+          down-you has four times more realityfluid!
+        </>
         <p>
-          Realityfluid is the as-yet unsolved measure of how real something is,
-          it originates from EY's thinking about QM where the probabilities of
-          you observing e.g. the spin of an electron when it's prepared in the
-          state |up⟩+2|down⟩ is 20% chance of spin up and 80% chance of spin
-          down. now whether you observe the electron spinning up or down, you're
-          still you, you still experience things happening fully. So what's the
-          difference between up-you and down-you, such that you care about
-          things happening to down-you four times more strongly before you
-          measure the electron? down-you has four times more realityfluid!
-        </p>
-        <p>
-          He postulates that this generalises, and that e.g. if you're being
+          He postulates that this generalises, and that e.g.if you're being
           simulated with perfect accuracy by someone who always introduces
           themselves and also exist in the physical world, and tomorrow there's
-          an 80% chance the simulation lord introduces themselves to you and a
-          20% chance that the world continues according to reductive physics,
+          an 80 % chance the simulation lord introduces themselves to you and a
+          20 % chance that the world continues according to reductive physics,
           what's going on is simulated-you has four times more realityfluid than
-          physical-you. It has the silly name realityfluid because the true
+          physical - you.It has the silly name realityfluid because the true
           metaphysics has not been discovered, it's a tag that this is weird and
           confusing.
         </p>
         <p>
           This use is extended in a colloquial sense to refer to a general
-          notion of how real or salient something is. Something with high
+          notion of how real or salient something is.Something with high
           realityfluid has a high presence in your life, you're likely to
           encounter it more often, you weigh it more heavily when making
           decisions, its impacts on you are more important so you think about it
