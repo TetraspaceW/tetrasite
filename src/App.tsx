@@ -7,6 +7,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import React from "react";
 import { FutarchyYourself } from "./components/FutarchyYourself/FutarchyYourself";
 import { GoToSpace } from "./components/FutarchyYourself/GoToSpace";
+import { Glossary } from "./components/Glossary/Glossary";
 
 export const App = () => {
   return (
@@ -23,6 +24,7 @@ export const App = () => {
             />
             <Route path="/futarchy" element={<FutarchyYourself />} />
             <Route path="/futarchy/go-to-space" element={<GoToSpace />} />
+            <Route path="/glossary" element={<Glossary />} />
           </Routes>
         </ScrollToTop>
       </HashRouter>
