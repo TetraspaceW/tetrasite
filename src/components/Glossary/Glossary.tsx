@@ -184,6 +184,19 @@ const glossaryEntries = [
       </>
     ),
   },
+  {
+    term: "Tet",
+    definition: (
+      <>
+        The god of games, of play, of having fun and playing together, and of
+        getting good at games by believing true things (about the game state)
+        and doing good actions (on the game board) in the name of having more
+        fun. In No Game No Life, Tet became the supreme God over the warring
+        members of the Old Deus and enforced a new world where conflicts would
+        be solved with games, rather than with destructive-conflict.
+      </>
+    ),
+  },
 ];
 
 export const Glossary = () => {
