@@ -152,18 +152,18 @@ const glossaryEntries = [
     definition: (
       <>
         <>
-          Realityfluid is the as-yet unsolved measure of how real something is, it
-          originates from EY's thinking about QM where the probabilities of you
-          observing e.g. the spin of an electron when it's prepared in the state
-          |up⟩+2|down⟩ is 20% chance of spin up and 80% chance of spin down. now
-          whether you observe the electron spinning up or down, you're still you,
-          you still experience things happening fully. So what's the difference
-          between up-you and down-you, such that you care about things happening
-          to down-you four times more strongly before you measure the electron?
-          down-you has four times more realityfluid!
+          Realityfluid is the as-yet unsolved measure of how real something is,
+          it originates from EY's thinking about QM where the probabilities of
+          you observing e.g. the spin of an electron when it's prepared in the
+          state |up⟩+2|down⟩ is 20% chance of spin up and 80% chance of spin
+          down. now whether you observe the electron spinning up or down, you're
+          still you, you still experience things happening fully. So what's the
+          difference between up-you and down-you, such that you care about
+          things happening to down-you four times more strongly before you
+          measure the electron? down-you has four times more realityfluid!
         </>
         <p>
-          He postulates that this generalises, and that e.g.if you're being
+          He postulates that this generalises, and that e.g. if you're being
           simulated with perfect accuracy by someone who always introduces
           themselves and also exist in the physical world, and tomorrow there's
           an 80 % chance the simulation lord introduces themselves to you and a
