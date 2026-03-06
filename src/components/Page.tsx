@@ -11,7 +11,8 @@ export const PageHeader = ({
   title,
   created,
   lastUpdated,
-}: PageHeaderProps) => {
+  children,
+}: PageHeaderProps & { children?: ReactNode }) => {
   return (
     <>
       <p>
@@ -22,6 +23,7 @@ export const PageHeader = ({
       {lastUpdated && (
         <em>Last updated: {lastUpdated.toISOString().split("T")[0]}. </em>
       )}
+      {children}
     </>
   );
 };
@@ -29,6 +31,6 @@ export const PageHeader = ({
 export const Page = ({
   children,
   ...headerProps
-}: { children: ReactNode[] } & PageHeaderProps) => (
+}: { children: ReactNode } & PageHeaderProps) => (
   <PageHeader {...headerProps}>{children}</PageHeader>
 );
