@@ -1,5 +1,24 @@
 ---
-import { App } from "../cra-project/App";
+import { ThingsICareAboutSection } from "../cra-project/components/HomePageSections/ThingsICareAboutSection";
+import { ShillsListSection } from "../cra-project/components/HomePageSections/ShillsListSection";
+import { ContactMeSection } from "../cra-project/components/HomePageSections/ContactMeSection";
+import { FictionWritingSection } from "../cra-project/components/HomePageSections/FictionWritingSection";
+import { InvisibleMessageSection } from "../cra-project/components/HomePageSections/InvisibleMessageSection";
+import { Logo } from "../cra-project/components/Logo";
 ---
 
-<App client:load />
+<div class="main">
+  <h1 class="homepage-header">Welcome to my web site!</h1>
+
+  <Logo client:only="react" />
+
+  <p>
+    This is the home page of 💎 Tetraspace 💎, and is the place for lots of cool
+    Tetraspace facts and content!
+  </p>
+  <ThingsICareAboutSection />
+  <ShillsListSection />
+  <ContactMeSection />
+  <FictionWritingSection />
+  <InvisibleMessageSection />
+</div>
