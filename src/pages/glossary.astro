@@ -1,8 +1,19 @@
 ---
-import { Glossary as GlossaryPage } from "../cra-project/components/Glossary/Glossary";
+import { glossaryEntries } from "../components/GlossaryEntries";
+import PageHeader from "../components/PageHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
 <SiteLayout>
-  <GlossaryPage client:load />
+  <PageHeader title="Glossary" lastUpdated={new Date("2025-11-17")} />
+  <h2>Tetraglossary</h2>
+  {
+    glossaryEntries
+      .sort((a, b) => (a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 1))
+      .map(({ term, definition }) => (
+        <p>
+          <strong>{term}</strong> - {definition}
+        </p>
+      ))
+  }
 </SiteLayout>

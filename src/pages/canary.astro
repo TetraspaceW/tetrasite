@@ -1,8 +1,13 @@
 ---
-import { Canary as CanaryPage } from "../cra-project/components/Canary";
+import PageHeader from "../components/PageHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
 <SiteLayout>
-  <CanaryPage client:load />
+  <PageHeader title={"Canary"} lastUpdated={new Date("2026-03-06")} />
+  <p>
+    As of 2026-03-06, there is not any information that I am legally forbidden
+    from revealing that I am legally forbidden from releasing.
+  </p>
+  <p>The next update to this page is scheduled for 2026-05-01.</p>
 </SiteLayout>

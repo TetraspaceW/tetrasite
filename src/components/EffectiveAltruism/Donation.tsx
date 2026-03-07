@@ -1,6 +1,4 @@
-import React from "react";
-
-import { DonationData } from "./Donations";
+import type { DonationData } from "./Donations";
 
 type DonationProps = {
   donation: DonationData;

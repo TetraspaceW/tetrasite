@@ -1,4 +1,3 @@
-import React from "react";
 import { Manifold } from "./Manifold";
 
 type MetricsAndCandidates = {
@@ -7,8 +6,10 @@ type MetricsAndCandidates = {
 }[];
 
 export const Comparison = ({ data }: { data: MetricsAndCandidates }) => {
+  const rowCount = Math.max(...data.map(({ metrics }) => metrics.length));
+
   return (
-    <table width={"100%"} border={1}>
+    <table width={"100%"} border={1} className="table">
       <thead>
         <tr>
           {data.map(({ candidate }) => (
@@ -17,13 +18,17 @@ export const Comparison = ({ data }: { data: MetricsAndCandidates }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map(({ metrics }) => (
+        {Array.from({ length: rowCount }, (_, rowIndex) => (
           <tr>
-            {metrics.map((metric) => (
-              <td>
-                <Manifold slug={metric} />
-              </td>
-            ))}
+            {data.map(({ metrics }) => {
+              const metric = metrics[rowIndex];
+
+              return (
+                <td>
+                  {metric ? <Manifold slug={metric} /> : null}
+                </td>
+              );
+            })}
           </tr>
         ))}
       </tbody>

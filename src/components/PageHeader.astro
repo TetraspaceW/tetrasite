@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  created?: string;
+  lastUpdated?: Date;
+}
+
+const { title, created, lastUpdated } = Astro.props;
+---
+
+<p>
+  <a href="/">Return home</a>
+</p>
+<h1>{title}</h1>
+{created && <em>Created: {created}. </em>}
+{
+  lastUpdated && (
+    <em>Last updated: {lastUpdated.toISOString().split("T")[0]}. </em>
+  )
+}
+<slot />

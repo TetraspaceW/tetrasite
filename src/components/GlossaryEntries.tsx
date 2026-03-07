@@ -1,7 +1,4 @@
-import React from "react";
-import { PageHeader } from "../Page";
-
-const glossaryEntries = [
+export const glossaryEntries = [
   {
     term: "all is lost",
     definition: (
@@ -198,19 +195,3 @@ const glossaryEntries = [
     ),
   },
 ];
-
-export const Glossary = () => {
-  return (
-    <>
-      <PageHeader title="Glossary" lastUpdated={new Date("2025-11-17")} />
-      <h2>Tetraglossary</h2>
-      {glossaryEntries
-        .sort((a, b) => (a.term.toLowerCase() < b.term.toLowerCase() ? -1 : 1))
-        .map(({ term, definition }) => (
-          <p>
-            <strong>{term}</strong> - {definition}
-          </p>
-        ))}
-    </>
-  );
-};
