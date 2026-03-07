@@ -1,5 +1,8 @@
 ---
 import { Glossary as GlossaryPage } from "../cra-project/components/Glossary/Glossary";
+import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<GlossaryPage client:load />
+<SiteLayout>
+  <GlossaryPage client:load />
+</SiteLayout>

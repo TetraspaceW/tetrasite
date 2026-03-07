@@ -1,5 +1,8 @@
 ---
 import { Canary as CanaryPage } from "../cra-project/components/Canary";
+import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<CanaryPage client:load />
+<SiteLayout>
+  <CanaryPage client:load />
+</SiteLayout>

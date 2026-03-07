@@ -1,7 +1,5 @@
-import React from "react";
 import { PageHeader } from "../Page";
 import { donations } from "./Donations";
-import donationsChart from "../../assets/donationsChart.svg";
 import { Donation } from "./Donation";
 
 export const EffectiveAltruism = () => {
@@ -68,7 +66,7 @@ export const EffectiveAltruism = () => {
       <p>Chart of my donations by cause area and date, up to 2023-12-30.</p>
       <center>
         <img
-          src={donationsChart}
+          src="/donationsChart.svg"
           alt={
             "A chart of the table on this page, grouped by cause area. In chronological order: £565 in 2020, mostly to long-term causes. £3592 in 2021, mostly to the donor lottery with about a sixth to long-term causes and a small amount to other causes. £264 in 2022, split between long-term and global poverty causes with a small amount to other causes. £8088 in 2023, split between long-term causes and the donor lottery with a small amount to other causes."
           }

@@ -1,5 +1,8 @@
 ---
 import { ShillsList } from "../cra-project/components/ShillsList/ShillsList";
+import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<ShillsList client:load />
+<SiteLayout>
+  <ShillsList client:load />
+</SiteLayout>
