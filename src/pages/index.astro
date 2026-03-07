@@ -4,10 +4,11 @@ import { ShillsListSection } from "../cra-project/components/HomePageSections/Sh
 import { ContactMeSection } from "../cra-project/components/HomePageSections/ContactMeSection";
 import { FictionWritingSection } from "../cra-project/components/HomePageSections/FictionWritingSection";
 import { InvisibleMessageSection } from "../cra-project/components/HomePageSections/InvisibleMessageSection";
-import { Logo } from "../cra-project/components/Logo";
+import { Logo } from "../components/Logo";
+import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
-<div class="main">
+<SiteLayout>
   <h1 class="homepage-header">Welcome to my web site!</h1>
 
   <Logo client:only="react" />
@@ -21,4 +22,4 @@ import { Logo } from "../cra-project/components/Logo";
   <ContactMeSection />
   <FictionWritingSection />
   <InvisibleMessageSection />
-</div>
+</SiteLayout>

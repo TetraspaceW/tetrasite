@@ -1,6 +1,13 @@
 import { useState } from "react";
-import { parseQueryString } from "./helpers";
-import { her, her2, vtuberLogo } from "../assets/assets";
+
+const parseQueryString = (queryString: string) => {
+    const query = new Map<string, string>();
+    for (const pair of queryString.slice(1).split("&")) {
+        const [key, value] = pair.split("=");
+        query.set(key, value);
+    }
+    return query;
+};
 
 export const Logo = () => {
     const [mouseOver, setMouseOver] = useState(false);
@@ -9,7 +16,7 @@ export const Logo = () => {
     return isUwu ? (
         <a href="https://twitter.com/FemboyFounder/status/1781518824837443835" >
             <img
-                src={vtuberLogo}
+                src="/vtuber.png"
                 className="her-image"
                 alt="Tetraspace VTuber logo, created by @FemboyFounder on Twitter"
             />
@@ -17,7 +24,7 @@ export const Logo = () => {
     ) : (
         <>
             <img
-                src={mouseOver ? her : her2}
+                src={mouseOver ? "/her.png" : "/her2.png"}
                 className="her-image"
                 alt="Smiling StyleGAN-generated portrait of an anime girl with white hair in a fluffy bob, pink eyes, a flower-like AI generation artefact in her hair, and a shirt collar."
                 onMouseOver={() => setMouseOver(true)}
