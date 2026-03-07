@@ -22,6 +22,32 @@ import GlobalStyles from "../components/GlobalStyles.astro";
 
   <body>
     <GlobalStyles />
+    <script is:inline>
+      (() => {
+        const hash = window.location.hash || "";
+        if (!hash.startsWith("#/")) return;
+
+        const route = hash.slice(1);
+        const redirects = {
+          "/tetraspace-shills-list": "/tetraspace-shills-list",
+          "/effective-altruism": "/effective-altruism",
+          "/futarchy": "/futarchy",
+          "/futarchy/go-to-space": "/futarchy/go-to-space",
+          "/glossary": "/glossary",
+          "/canary": "/canary",
+          "/blog/against-donor-lottery":
+            "https://forum.effectivealtruism.org/posts/eWp6raK5iQ8sfvh4M/reasons-why-one-might-not-give-to-a-donor-lottery",
+        };
+
+        const target = redirects[route];
+        if (!target) return;
+
+        const current = `${window.location.pathname}${window.location.search}`;
+        if (current !== target) {
+          window.location.replace(target);
+        }
+      })();
+    </script>
     <div class="main"><slot /></div>
   </body>
 </html>
