@@ -1,0 +1,34 @@
+---
+import Manifold from "./Manifold.astro";
+
+interface Props {
+  data: {
+    candidate: string;
+    metrics: string[];
+  }[];
+}
+
+const { data } = Astro.props as Props;
+const rowCount = Math.max(...data.map(({ metrics }) => metrics.length));
+---
+
+<table width={"100%"} border={1} class="table">
+  <thead>
+    <tr>
+      {data.map(({ candidate }) => <th>{candidate}</th>)}
+    </tr>
+  </thead>
+  <tbody>
+    {
+      Array.from({ length: rowCount }, (_, rowIndex) => (
+        <tr>
+          {data.map(({ metrics }) => {
+            const metric = metrics[rowIndex];
+
+            return <td>{metric ? <Manifold slug={metric} /> : null}</td>;
+          })}
+        </tr>
+      ))
+    }
+  </tbody>
+</table>

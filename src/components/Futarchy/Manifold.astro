@@ -1,0 +1,10 @@
+---
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+---
+
+<iframe src={`https://manifold.markets/embed/${slug}`} class="manifold-embed"
+></iframe>
