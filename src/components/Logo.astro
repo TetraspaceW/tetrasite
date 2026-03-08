@@ -11,6 +11,13 @@
       logoImage.src = "/vtuber.png";
       logoImage.alt =
         "A VTuber-style logo for Tetraspace. Tetra Space is written on two seperate lines in a sparkling bubble font. Tetra is written in cyan and has diamond-shaped sparkles, and Space is written in magenta and has flower-shaped sparkles. To the left is a gem emoji, to the right is a magnifying glass, and above is a shoggoth.";
+
+      const logoLink = document.getElementById("logo-link");
+
+      if (logoLink instanceof HTMLAnchorElement) {
+        logoLink.href =
+          "https://twitter.com/FemboyFounder/status/1781518824837443835";
+      }
     } else {
       logoImage.src = "/her2.png";
       logoImage.alt = herDescription[1];
@@ -27,7 +34,7 @@
   }
 </script>
 
-<img id="logo-image" class="her-image" />
+<a id="logo-link"><img id="logo-image" class="her-image" /></a>
 <noscript>
   <img
     src="/her.png"
