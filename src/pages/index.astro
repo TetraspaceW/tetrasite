@@ -4,7 +4,7 @@ import ShillsListSection from "../components/HomePageSections/ShillsListSection.
 import ContactMeSection from "../components/HomePageSections/ContactMeSection.astro";
 import FictionWritingSection from "../components/HomePageSections/FictionWritingSection.astro";
 import InvisibleMessageSection from "../components/HomePageSections/InvisibleMessageSection.astro";
-import { DynamicLogo } from "../components/DynamicLogo";
+
 import Logo from "../components/Logo.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
@@ -12,8 +12,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
 <SiteLayout>
   <h1 class="homepage-header">Welcome to my web site!</h1>
 
-  <DynamicLogo client:only="react" />
-  <noscript><Logo /></noscript>
+  <Logo />
 
   <p>
     This is the home page of 💎 Tetraspace 💎, and is the place for lots of cool
