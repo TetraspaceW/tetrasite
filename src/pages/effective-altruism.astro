@@ -5,14 +5,19 @@ import PageHeader from "../components/PageHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
+<style>
+  .center {
+    text-align: center;
+  }
+</style>
+
 <SiteLayout>
   <PageHeader title="Effective Altruism" lastUpdated={new Date("2024-04-22")} />
   <h2>Where to Give?</h2>
   <p>
     For small donors, I currenly think that the best place to give, absent
     matching schemes, is to a donor lottery, like the one that Giving What We
-    Can{" "}
-    <a href="https://www.givingwhatwecan.org/donor-lottery">
+    Can <a href="https://www.givingwhatwecan.org/donor-lottery">
       runs at the end of each year.</a
     > This is because, assuming that you're risk neutral (which you probably should
     be, if you're a small donor and hence are donating a small amount compared to
@@ -28,8 +33,7 @@ import SiteLayout from "../layouts/SiteLayout.astro";
     On the object level, because "Donor Lottery" is passing the buck to a longer
     deliberation process and you might want my opinions on where that
     deliberation process might end up, I'm not so sure where to give. I think
-    giving to the{" "}
-    <a href="https://intelligence.org">
+    giving to the <a href="https://intelligence.org">
       Machine Intelligence Research Institute</a
     > (MIRI) might be a good idea; I don't expect MIRI to spend money on things that
     are alignment-themed but that they don't think would help.
@@ -58,10 +62,10 @@ import SiteLayout from "../layouts/SiteLayout.astro";
   </table>
   <h2>Chart</h2>
   <p>Chart of my donations by cause area and date, up to 2023-12-30.</p>
-  <center>
+  <div class="center">
     <img
       src="/donationsChart.svg"
       alt={"A chart of the table on this page, grouped by cause area. In chronological order: £565 in 2020, mostly to long-term causes. £3592 in 2021, mostly to the donor lottery with about a sixth to long-term causes and a small amount to other causes. £264 in 2022, split between long-term and global poverty causes with a small amount to other causes. £8088 in 2023, split between long-term causes and the donor lottery with a small amount to other causes."}
     />
-  </center>
+  </div>
 </SiteLayout>

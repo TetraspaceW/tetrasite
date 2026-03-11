@@ -30,28 +30,26 @@ const fiction: Work[] = [
 ];
 ---
 
-<>
-  <h2>Fiction Writing</h2>
-  <p>
-    Sometimes I like to write fiction; here are links to stuff that I've
-    published online.
-  </p>
-  {
-    fiction.map((work) => {
-      const { wordcount, incomplete, link, name, description } = work;
-      const wcNotePresent = wordcount || incomplete;
-      const wcNote = wcNotePresent
-        ? ` (${(wordcount ? [`${wordcount} words`] : [])
-            .concat(incomplete ? [`incomplete`] : [])
-            .join(", ")})`
-        : "";
-      return (
-        <li>
-          <p>
-            <a href={link}>{name}</a> {wcNote} - {description}
-          </p>
-        </li>
-      );
-    })
-  }
-</>
+<h2>Fiction Writing</h2>
+<p>
+  Sometimes I like to write fiction; here are links to stuff that I've published
+  online.
+</p>
+{
+  fiction.map((work) => {
+    const { wordcount, incomplete, link, name, description } = work;
+    const wcNotePresent = wordcount || incomplete;
+    const wcNote = wcNotePresent
+      ? ` (${(wordcount ? [`${wordcount} words`] : [])
+          .concat(incomplete ? [`incomplete`] : [])
+          .join(", ")})`
+      : "";
+    return (
+      <li>
+        <p>
+          <a href={link}>{name}</a> {wcNote} - {description}
+        </p>
+      </li>
+    );
+  })
+}

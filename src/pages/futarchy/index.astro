@@ -5,6 +5,12 @@ import Manifold from "../../components/Futarchy/Manifold.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 ---
 
+<style>
+  .collapsed-header {
+    display: inline;
+  }
+</style>
+
 <SiteLayout>
   <PageHeader
     title={"Solving Politics with Prediction Markets"}
@@ -32,10 +38,10 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
     available evidence.
   </p>
   <p>
-    So, my mission, if I choose to accept it:{" "}
-    <strong>full branch coverage</strong> of politics. Then people will be able to
-    vote on their values and bet on their beliefs. Like they should have been doing,
-    the whole time.
+    So, my mission, if I choose to accept it: <strong
+      >full branch coverage</strong
+    > of politics. Then people will be able to vote on their values and bet on their
+    beliefs. Like they should have been doing, the whole time.
   </p>
   <p>
     Markets on elections that happened in the past will be underneath
@@ -49,13 +55,12 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
   </p>
   <details>
     <summary
-      ><h2 style="display: inline">
+      ><h2 class="collapsed-header">
         2024 United States Presidential Election
       </h2></summary
     >
     <p>
-      The{" "}
-      <a
+      The <a
         href="https://en.wikipedia.org/wiki/2024_United_States_presidential_election"
         >2024 United States presidential election</a
       > is primarily between two candidates: Kamala Harris, the Democratic nominee
@@ -68,8 +73,9 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
     <details>
       <summary>2024 Democratic Party presidential primaries</summary>
       <p>
-        Following the{" "}
-        <a href="https://ballotpedia.org/Presidential_debates,_2024">
+        Following the <a
+          href="https://ballotpedia.org/Presidential_debates,_2024"
+        >
           June 27th debate</a
         >, there was much rumbling about whether Biden would resign. Harris was
         clearly the favourite, though Gretchen Whitmer and Gavin Newsom were
@@ -185,8 +191,7 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
       </table>
       <p>
         There was about a 5% difference between the top and bottom VP candidates
-        by probability of winning, with{" "}
-        <a
+        by probability of winning, with <a
           href="https://www.vox.com/politics/364677/tim-walz-harris-vp-josh-shapiro"
         >
           Josh Shapiro</a
