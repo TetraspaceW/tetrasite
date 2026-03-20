@@ -1,0 +1,61 @@
+---
+import PageHeader from "../../components/PageHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+
+const apocalypses = [
+  {
+    timescale: 10,
+    title: "Artificial Intelligence",
+    slug: "artificial-intelligence",
+    type: "big",
+  },
+  {
+    timescale: 100,
+    title: "Eternal Dictatorship",
+    slug: "eternal-dictatorship",
+    type: "artificial",
+  },
+  {
+    timescale: 100,
+    title: "Biological Weapons",
+    slug: "biological-weapons",
+    type: "artificial",
+  },
+  {
+    timescale: 100,
+    title: "Nanotechnology",
+    slug: "nanotechnology",
+    type: "artificial",
+  },
+];
+---
+
+<style>
+  body {
+    background-color: black;
+    color: LavenderBlush;
+    font-size: larger;
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .apocalypse:nth-child(odd) {
+  }
+</style>
+
+<SiteLayout>
+  <PageHeader title="Apocalypse How" lastUpdated={new Date("2026-03-11")} />
+
+  <div class="apocalypse-list">
+    {
+      apocalypses
+        .sort((a, b) => a.timescale - b.timescale)
+        .map((apocalypse) => (
+          <div class="apocalypse">
+            <a href={`/apocalypse-how/${apocalypse.slug}`}>
+              {apocalypse.title}
+            </a>
+          </div>
+        ))
+    }
+  </div>
+</SiteLayout>
