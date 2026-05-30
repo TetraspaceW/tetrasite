@@ -90,6 +90,14 @@ const organisations = {
     name: "EA Forum Donation Election Fund",
     url: "https://www.givingwhatwecan.org/en-GB/charities/ea-forum-donation-election-fund",
   },
+  hki: {
+    name: "Hellen Keller International",
+    url: "https://helenkellerintl.org/",
+  },
+  li: {
+    name: "Lightcone Infrastructure",
+    url: "https://www.lightconeinfrastructure.com/",
+  },
 };
 
 export const donations: DonationData[] = [
@@ -759,5 +767,45 @@ export const donations: DonationData[] = [
         </p>
       </>
     ),
+  },
+  {
+    date: new Date(2026, 5, 30),
+    organisation: organisations.hki,
+    causeArea: cause.gp,
+    description: (
+      <p>
+        28th May was{" "}
+        <a href="https://www.worldhungerday.org/">World Hunger Day</a>! I got an
+        email from Giving What We Can about this, and of the list of charities
+        that supported world reducing world hunger, Hellen Keller International
+        was the one that was recommended by Givewell. This also helps with{" "}
+        <a href="https://www.un.org/sustainabledevelopment/hunger/">
+          Sustainable Development Goal 2, Zero Hunger
+        </a>
+        , and I love those sustainable development goals.
+      </p>
+    ),
+    amount: 18.75,
+  },
+  {
+    date: new Date(2026, 5, 30),
+    organisation: organisations.miri,
+    causeArea: cause.l,
+    description: <p>Cute girl on Discord told me to.</p>,
+    amount: 15.37,
+  },
+  {
+    date: new Date(2026, 5, 30),
+    organisation: organisations.li,
+    causeArea: cause.l,
+    description: <p>Cute girl on Discord told me to.</p>,
+    amount: 15.37,
+  },
+  {
+    date: new Date(2026, 5, 30),
+    organisation: organisations.amf,
+    causeArea: cause.gp,
+    description: <p>Cute girl on Discord told me to.</p>,
+    amount: 15.37,
   },
 ];
