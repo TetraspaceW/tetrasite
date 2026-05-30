@@ -3,18 +3,34 @@ import PageHeader from "../../components/PageHeader.astro";
 import Comparison from "../../components/Futarchy/Comparison.astro";
 import Manifold from "../../components/Futarchy/Manifold.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+
+const lastUpdated = new Date("2026-04-14");
 ---
 
 <style>
   .collapsed-header {
     display: inline;
   }
+
+  .inline-image {
+    width: 90%;
+    max-width: 35rem;
+    margin: auto;
+    display: block;
+  }
+
+  .probs-table {
+    border-width: 1px;
+    width: 90%;
+    max-width: 35rem;
+    margin: auto;
+  }
 </style>
 
 <SiteLayout>
   <PageHeader
     title={"Solving Politics with Prediction Markets"}
-    lastUpdated={new Date("2026-03-07")}
+    lastUpdated={lastUpdated}
   />
   <p>
     Can you believe that, in the year 2024, there are still trivial epistemic
@@ -53,6 +69,149 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
     about those markets. The commentary is accurate to the prediction markets as
     of the time of writing.
   </p>
+  <h2>The Next UK General Election</h2>
+  <p>
+    The next UK general election is currently scheduled for on or before 15th
+    August 2029, though it's very plausible that it might be called early.
+  </p>
+  <Manifold slug="Noit/when-will-the-next-uk-general-elect-dczh8Uc6QE" />
+  <p>
+    As of writing, prediction markets give a 45% chance it's held early, before
+    the start of 2029; with a mean date of July 2028.
+  </p>
+  <Manifold slug="Tetraspace/when-will-the-next-uk-general-elect-uccgggpqCE" />
+  <p>
+    By year, there's a 29% chance it's held in 2028, a 55% chance it's held in
+    2029, and a small probability scattered over years earlier than 2028. So
+    prior to the end of 2028, we can mostly assume that Labour is going to be in
+    power, barring something surprising happening, though perhaps with a new
+    leader.
+  </p>
+  <Manifold slug="Tetraspace/which-party-will-the-prime-minister-usspd5PZOC" />
+  <p>
+    After the election, it looks like it's going to be one of three parties
+    either getting a majority in Parliament or making up a lead role in a
+    coalition: <a href="https://en.wikipedia.org/wiki/Labour_Party_(UK)"
+      >Labour</a
+    > (34%), <a href="https://en.wikipedia.org/wiki/Reform_UK">Reform</a> (35%), or
+    <a href="https://en.wikipedia.org/wiki/Conservative_Party_(UK)"
+      >Conservatives</a
+    > (14%), with special mention to <a
+      href="https://en.wikipedia.org/wiki/Green_Party_of_England_and_Wales"
+      >Green</a
+    > (8%).
+  </p>
+
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Opinion_polling_graph_for_the_next_United_Kingdom_general_election_%28post-2024%29.svg"
+    alt='A graph of polling data on the UK election, found on the "Opinion polling for the next United Kingdom general election" article on Wikipedia.'
+    class="inline-image"
+  />
+
+  <p>
+    This represents a realignment between the major parties following the 2024
+    election, visible very clearly in the polls, and indicated in the <a
+      href="https://en.wikipedia.org/wiki/2025_United_Kingdom_local_elections"
+      >2025 local elections</a
+    >; Reform's polling has risen to position it above all the previous major
+    parties at 25%, and Green's polling has risen to position it on par with
+    Labour and the Conservatives at around 17%. Given current polling, Reform is
+    on track to replace the existing right-wing party, and the Green party is a
+    contender to replace the existing left-wing party. A time of uncertainty,
+    for those without prediction markets! (Those with them are still uncertain,
+    but less, and quantifiably.)
+  </p>
+
+  <h3>Policy after the Next Election</h3>
+  <p>
+    My conditional policy markets will be of the form "if the Prime Minister is
+    of party X in the year Y, what will metric Z be"? This captures the effect
+    of elections - a different party winning an elections indeed does change the
+    party of the prime minister - and also takes into account uncertainty in
+    election timing.
+  </p>
+
+  <h4>Democracy and Free Speech</h4>
+  <h4>Immigration</h4>
+  <h4>Economic Growth</h4>
+  <h4>Foreign Aid</h4>
+  <h3>Labour Leadership into the Next Election</h3>
+  <p>
+    The Labour Party is currently lead by Keir Starmer, though he only has a 27%
+    chance of remaining as the leader of the Labour party going into the next
+    election.
+  </p>
+  <Manifold slug="Tetraspace/who-will-be-the-leader-of-the-labou-6i8kyac5xo" />
+  <p>
+    The leader of the Labour party does affect Labour's chances of winning the
+    general election, on the order of 10% between the likely candidates:
+  </p>
+
+  <Manifold slug="Tetraspace/if-this-person-is-the-leader-of-the-8QNARsC6Oq" />
+
+  <p>
+    A summary table of these probabilities for the main contenders as of {
+      lastUpdated.toDateString()
+    } is below.
+  </p>
+
+  <table class="probs-table" border={1}>
+    <tr>
+      <th>Candidate</th>
+      <th>P(Leader)</th>
+      <th>P(PM|Leader)</th>
+    </tr>
+    <tr>
+      <td>* Keir Starmer</td>
+      <td>27%</td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td>Andy Burnham</td>
+      <td>10%</td>
+      <td><strong>39%</strong></td>
+    </tr>
+    <tr>
+      <td>Shabana Mahmood</td>
+      <td>10%</td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td>Wes Streeting</td>
+      <td>8%</td>
+      <td>28%</td>
+    </tr>
+    <tr>
+      <td>Ed Miliband</td>
+      <td>6%</td>
+      <td>38%</td>
+    </tr>
+  </table>
+
+  <p>
+    There isn't a very large difference between possible candidates, though if
+    there is a Labour leadership election, Andy Burnham is the most likely to
+    lead Labour to victory in the general election, so I would suggest <strong
+      >supporting Andy Burnham in the case where there is a Labour leadership
+      election</strong
+    >.
+  </p>
+
+  <h3>Reform Leadership into the Next Election</h3>
+  <p>
+    Reform is Farage's party, and Farage is predicted to remain leader; the
+    leader at the next general election is mostly an "other" bucket.
+  </p>
+  <Manifold slug="Tetraspace/who-will-be-the-leader-of-reform-uk" />
+
+  <h3>Conservative Leadership into the Next Election</h3>
+  <p>
+    Kemi Badenoch has a 42% chance of remaining leader of the Conservative Party
+    into the next election, so there's a significant chance the Conservatives
+    have a change of leadership.
+  </p>
+  <Manifold slug="JoshuaWilkes/who-will-lead-the-conservative-part" />
+
   <details>
     <summary
       ><h2 class="collapsed-header">
@@ -145,7 +304,7 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
         the election chances of the current president. They looked something like
         this, from eyeballing the chart (I've bolded the two eventual finalists):
       </p>
-      <table border={1}>
+      <table class="probs-table" border={1}>
         <thead>
           <th>Candidate</th>
           <th>P(win|VP)</th>
