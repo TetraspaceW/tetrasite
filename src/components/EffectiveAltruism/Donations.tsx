@@ -98,6 +98,10 @@ const organisations = {
     name: "Lightcone Infrastructure",
     url: "https://www.lightconeinfrastructure.com/",
   },
+  gwwcmf: {
+    name: "Malaria Fund",
+    url: "https://www.givingwhatwecan.org/malaria",
+  },
 };
 
 export const donations: DonationData[] = [
@@ -790,14 +794,14 @@ export const donations: DonationData[] = [
   {
     date: new Date(2026, 5, 30),
     organisation: organisations.miri,
-    causeArea: cause.l,
+    causeArea: cause.lt,
     description: <p>Cute girl on Discord told me to.</p>,
     amount: 15.37,
   },
   {
     date: new Date(2026, 5, 30),
     organisation: organisations.li,
-    causeArea: cause.l,
+    causeArea: cause.lt,
     description: <p>Cute girl on Discord told me to.</p>,
     amount: 15.37,
   },
@@ -807,5 +811,33 @@ export const donations: DonationData[] = [
     causeArea: cause.gp,
     description: <p>Cute girl on Discord told me to.</p>,
     amount: 15.37,
+  },
+  {
+    date: new Date(2026, 8, 11),
+    organisation: organisations.gwwcmf,
+    causeArea: cause.gp,
+    description: (
+      <>
+        <p>
+          Giving What We Can is currently running a{" "}
+          <a href="https://www.givingwhatwecan.org/malaria">
+            fundraiser against malaria
+          </a>
+          ! This is on the back of a{" "}
+          <a href="https://www.youtube.com/watch?v=BJYfSfh7eWs">short film</a>{" "}
+          they supported regarding the history of malaria. I don't like malaria.
+          I think that malaria should be eradicated. And since they're running
+          this fundraiser, I might as well take part in beating back that
+          ancient enemy of mankind.
+        </p>
+        <p>
+          The Malaria Fund isn't specifically documented on their site, but is
+          the target of donations, and disburses funds to the Against Malaria
+          Foundation (bednets) and the Malaria Consortium (seasonal
+          chemoprevention).
+        </p>
+      </>
+    ),
+    amount: 45,
   },
 ];
