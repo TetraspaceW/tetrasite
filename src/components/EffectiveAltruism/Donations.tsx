@@ -832,9 +832,9 @@ export const donations: DonationData[] = [
         </p>
         <p>
           The Malaria Fund isn't specifically documented on their site, but is
-          the target of donations, and disburses funds to the Against Malaria
-          Foundation (bednets) and the Malaria Consortium (seasonal
-          chemoprevention).
+          the target of the donations solicited by this fundraiser, and
+          disburses funds to the Against Malaria Foundation (bednets) and the
+          Malaria Consortium (seasonal chemoprevention).
         </p>
       </>
     ),
