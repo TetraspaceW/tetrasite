@@ -1,8 +1,8 @@
 ---
-import { Donation } from "../components/EffectiveAltruism/Donation";
-import { donations } from "../components/EffectiveAltruism/Donations";
-import PageHeader from "../components/PageHeader.astro";
-import SiteLayout from "../layouts/SiteLayout.astro";
+import { Donation } from "../../components/EffectiveAltruism/Donation";
+import { donations } from "../../components/EffectiveAltruism/Donations";
+import PageHeader from "../../components/PageHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
 ---
 
 <style>
@@ -12,22 +12,25 @@ import SiteLayout from "../layouts/SiteLayout.astro";
 </style>
 
 <SiteLayout>
-  <PageHeader title="Effective Altruism" lastUpdated={new Date("2024-04-22")} />
+  <PageHeader title="Effective Altruism" lastUpdated={new Date("2026-08-17")} />
   <h2>Where to Give?</h2>
   <p>
     For small donors, I currenly think that the best place to give, absent
     matching schemes, is to a donor lottery, like the one that Giving What We
     Can <a href="https://www.givingwhatwecan.org/donor-lottery">
-      runs at the end of each year.</a
-    > This is because, assuming that you're risk neutral (which you probably should
-    be, if you're a small donor and hence are donating a small amount compared to
-    the amount dedicated to optimising in your cause area), there's only upside: at
-    worst you'll donate the same expected monetary amount to wherever you were going
-    to donate, and you can also spend time evaluating where to donate to find somewhere
-    even better. Given that there is increasing marginal utility from it being optimal
-    to spend more effort evaluating with a larger bankroll, the largest donor lottery
-    (up until one starts hitting significant diminishing returns) is the best to give
-    to.
+      previously ran at the end of each year</a
+    > (though they didn't have an end-2025 lottery; <a
+      href="https://manifold.markets/Tetraspace/will-there-be-another-gwwc-donor-lo"
+      >here</a
+    > is a market on whether they will hold one at the end of 2026). This is because,
+    assuming that you're risk neutral (which you probably should be, if you're a small
+    donor and hence are donating a small amount compared to the amount dedicated to
+    optimising in your cause area), there's only upside: at worst you'll donate the
+    same expected monetary amount to wherever you were going to donate, and you can
+    also spend time evaluating where to donate to find somewhere even better. Given
+    that there is increasing marginal utility from it being optimal to spend more
+    effort evaluating with a larger bankroll, the largest donor lottery (up until
+    one starts hitting significant diminishing returns) is the best to give to.
   </p>
   <p>
     On the object level, because "Donor Lottery" is passing the buck to a longer
