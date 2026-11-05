@@ -1,9 +1,12 @@
 ---
+import { getMarketTitle } from "./marketTitle";
+
 interface Props {
   slug: string;
 }
 
 const { slug } = Astro.props;
+const title = await getMarketTitle(slug);
 ---
 
 <style>
@@ -17,5 +20,7 @@ const { slug } = Astro.props;
   }
 </style>
 
-<iframe src={`https://manifold.markets/embed/${slug}`} class="manifold-embed"
-></iframe>
+<iframe
+  src={`https://manifold.markets/embed/${slug}`}
+  title={title}
+  class="manifold-embed"></iframe>
