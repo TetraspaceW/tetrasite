@@ -731,44 +731,42 @@ export const donations: DonationData[] = [
           </a>
           .
         </p>
-        <p>
-          <blockquote cite="https://twitter.com/TetraspaceWest/status/1738634682084782367">
-            <p>just blew my entire donation budget on lottery tickets</p>
-            <p>donor lottery tickets 😎</p>
-            <p>
-              Donor lotteries: there is a pool of $100,000, and you win that
-              entire pool to grant to charities with a probability proportional
-              to how much you pay in; paying $1,000 gives you a 1% chance of
-              winning.
-            </p>
-            <p>
-              Because how effective a donation is increases with the effort you
-              spend evaluating where to eventually send it, this means that
-              <ul>
-                <li>
-                  the donation amount is the same in expectation (1% chance of
-                  donating $100k = 100% chance of donating 1k)
-                </li>
-                <li>
-                  and the donation is more effective, because if you win it will
-                  be worth you spending more time evaluating (1% chance of 101k
-                  utils &gt; 100% chance of 1k utils)
-                </li>
-              </ul>
-            </p>
-            <p>
-              It doesn't matter if the other people care about things you don't
-              care about, because this argument that it's +EV is independent of
-              the behaviour of the other participants.
-            </p>
-            <p>
-              (Though if lots of people participate in donor lotteries, more
-              donor lotteries will be run, so it might be a bad deal if other
-              participants being more effective by their standards makes the
-              world <em>worse</em> by your standards.)
-            </p>
-          </blockquote>
-        </p>
+        <blockquote cite="https://twitter.com/TetraspaceWest/status/1738634682084782367">
+          <p>just blew my entire donation budget on lottery tickets</p>
+          <p>donor lottery tickets 😎</p>
+          <p>
+            Donor lotteries: there is a pool of $100,000, and you win that
+            entire pool to grant to charities with a probability proportional
+            to how much you pay in; paying $1,000 gives you a 1% chance of
+            winning.
+          </p>
+          <p>
+            Because how effective a donation is increases with the effort you
+            spend evaluating where to eventually send it, this means that
+          </p>
+          <ul>
+            <li>
+              the donation amount is the same in expectation (1% chance of
+              donating $100k = 100% chance of donating 1k)
+            </li>
+            <li>
+              and the donation is more effective, because if you win it will
+              be worth you spending more time evaluating (1% chance of 101k
+              utils &gt; 100% chance of 1k utils)
+            </li>
+          </ul>
+          <p>
+            It doesn't matter if the other people care about things you don't
+            care about, because this argument that it's +EV is independent of
+            the behaviour of the other participants.
+          </p>
+          <p>
+            (Though if lots of people participate in donor lotteries, more
+            donor lotteries will be run, so it might be a bad deal if other
+            participants being more effective by their standards makes the
+            world <em>worse</em> by your standards.)
+          </p>
+        </blockquote>
       </>
     ),
   },

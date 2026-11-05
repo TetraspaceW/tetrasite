@@ -12,7 +12,13 @@ const { data } = Astro.props as Props;
 const rowCount = Math.max(...data.map(({ metrics }) => metrics.length));
 ---
 
-<table width={"100%"} border={1} class="table">
+<style>
+  .comparison {
+    width: 100%;
+  }
+</style>
+
+<table border={1} class="table comparison">
   <thead>
     <tr>
       {data.map(({ candidate }) => <th>{candidate}</th>)}

@@ -76,7 +76,7 @@ export const shills: ShillData[] = [
     links: [
       {
         name: "LaFM Link",
-        location: "Project Gutenberg Australia",
+        location: "Goodreads",
         url: "https://www.goodreads.com/ebooks/download/564325.Last_and_First_Men_Star_Maker",
       },
       {
